@@ -1,0 +1,241 @@
+Live Estimate · Operation Epic Fury · Strikes Began Feb 28, 2026
+Iran War Cost Tracker
+U.S. TAXPAYER DOLLARS · LIVE ESTIMATE
+Operation Epic Fury — Est. U.S. Cost Since Strikes Began
+$2,110,556,199
+range: $1,758,833,772 – $2,604,445,381 | discrete events: $808,000,000
+ops: $1,302,556,199 + events: $808,000,000
+Sustained Operations
+~$220,000,000/day
+03
+Days
+:
+17
+Hrs
+:
+44
+Min
+:
+00
+Sec
+Per Second
+$2,546
+Sustained Operations
+Per Hour
+$9,166,667
+Sustained Operations
+Per Day
+$220,000,000
+Sustained Operations
+Daily Burn Rate Breakdown — Sustained Operations
+Personnel (~50,000 deployed)
+$40,000,000
+Naval forces (2 CSGs, 7 DDGs, 6 LCS)
+$22,000,000
+Aircraft operations (13 types)
+$48,000,000
+Fuel & logistics
+$15,000,000
+Non-tracked ordnance
+$35,000,000
+C4ISR / cyber / space
+$10,000,000
+Overhead & unmodeled costs
+$50,000,000
+Total Daily Operational Cost
+$220,000,000/day
+Sources: DoD, CRS, NPR analysis · DefenceXP, Semler analysis, Defense News, GAO · DoD Comptroller FY2024/25, CBO, GAO, Defense Express · DLA Energy, EIA, The Hill ($400/gal Afghanistan precedent) · DoD procurement data, SIPRI · CBO, Stimson Center estimates · CBO methodology notes, RAND cost estimation guidance, Brown Univ. Costs of War
+Deployed Forces — Operating Costs
+Naval
+Aircraft
+⚓
+Aircraft Carrier Strike Group
+Nimitz / Ford-class
+×2
+$6,500,000–$8,700,000/day each
+⚓
+Guided-Missile Destroyer (DDG)
+Arleigh Burke-class
+×7
+$222,000/day each
+⚓
+Littoral Combat Ship (LCS)
+Freedom / Independence-class
+×6
+$192,000–$438,356/day each
+Est. Naval Daily Cost
+$15,706,000–$21,584,136/day
+USS Abraham Lincoln (CSG-3, Arabian Sea) + USS Gerald R. Ford (CSG-12, Eastern Med)
+Operation Timeline & Discrete Costs
+02-28 04:00
+Operation Epic Fury begins
+First wave: Tomahawk + JASSM-ER strikes on air defenses, C2 nodes. 1,000+ targets struck Day 1.
+--
+02-28 04:30
+Cyber/Space operations - 'first movers'
+Coordinated cyber and space operations conducted as opening phase, degrading Iranian C3 capabilities
+--
+02-28 06:30
+3 U.S. aircraft lost to friendly fire from Kuwait
+Estimated $90,000,000 per airframe — likely F-15E or F/A-18E/F class; shot down by Kuwaiti air defenses in apparent misidentification
+$270,000,000
+02-28 08:00
+First Tomahawk salvo — est. 120+ missiles
+120 Tomahawk Block V at ~$2.0M each (replacement cost: $1.75M–$2.2M per RTX contract)
+$240,000,000
+02-28 12:00
+JASSM-ER strikes on hardened targets
+Est. 60 JASSM-ER at ~$1.5M each
+$90,000,000
+03-01 02:00
+Second wave strikes — DEAD/SEAD operations
+Suppression of enemy air defenses, follow-on Tomahawk strikes (~100 additional)
+$180,000,000
+03-01 14:00
+GBU-57 MOP strikes on Fordow enrichment facility
+Est. 8 GBU-57 Massive Ordnance Penetrators at ~$3.5M each, delivered by B-2 Spirit ($150K/flight hr × 30 hrs per sortie)
+$28,000,000
+03-01 18:00
+Naval strikes on Iranian forces
+Major strikes targeting Iranian naval forces and facilities
+--
+03-02 20:00
+LUCAS drone first combat deployment
+LUCAS autonomous combat drones used in strikes against Iran, first operational combat appearance
+--
+03-03 03:20
+B-1 Lancer bombers deployed to theater
+B-1 Lancer strategic bombers conducting strikes on Iran with more fighters flowing into theater
+--
+03-03 04:56
+US Embassy Saudi Arabia hit by Iranian drones
+Iranian drone strike on US Embassy in Saudi Arabia - first successful Iranian retaliation
+--
+Total Discrete Costs
+$808,000,000
+Human Cost
+Behind every number above is a person and their family below.
+United States
+Service members killed
+6
+Wounded
+18
+U.S. Department of Defense / CENTCOM
+Iran
+Military casualties (est.)
+40+
+Civilian casualties (est.)
+221+
+IDF / CENTCOM estimates; Iranian Red Crescent, AP, Reuters
+Why ranges? Casualty figures in active conflicts are inherently uncertain. U.S. figures are confirmed individually by the Department of Defense. Iranian figures are estimates compiled from multiple, sometimes conflicting sources — official Iranian statements, CENTCOM assessments, and independent reporting.
+
+Civilian casualty counts often lag military operations by weeks or months as access to affected areas is restricted. These numbers will be updated as more reliable information becomes available.
+
+CASUALTY DATA LAST UPDATED: 2026-03-03
+
+Estimated Munitions & Equipment Costs
+Item
+Qty
+Est. Cost
+Tomahawk Block V
+$2,000,000 ea. (repl: $2,200,000)
+220
+$440,000,000
+JASSM-ER
+$1,500,000 ea. (repl: $1,700,000)
+60
+$90,000,000
+GBU-57 MOP
+$3,500,000 ea. (repl: $4,000,000)
+8
+$28,000,000
+GBU-31 JDAM
+$25,000 ea. (repl: $30,000)
+400
+$10,000,000
+AGM-88 HARM
+$870,000 ea. (repl: $950,000)
+45
+$39,150,000
+AIM-120 AMRAAM
+$1,100,000 ea. (repl: $1,200,000)
+30
+$33,000,000
+Aircraft lost (airframe)
+$90,000,000 ea.
+3
+$270,000,000
+TOTAL
+$910,150,000
+REPL. COST
+$978,750,000
+Quantities are estimates based on early reporting. Unit costs from DoD procurement data. Replacement costs (yellow) reflect surge production pricing — what it actually costs to rebuild inventory. Tomahawk production scaling from ~100/yr to 1,000+/yr (RTX). JASSM-ER backlog: 18–24 months.
+Market Impact LIVE
+Brent Crude Oil
+$81.64/bbl
++10.89 (+15.39%)
+WTI Crude Oil
+$74.57/bbl
++9.36 (+14.35%)
+Gold
+$5097.70/oz
+-78.80 (-1.52%)
+S&P 500
+6,816.63
+-73.44 (-1.07%)
+Dow Jones
+48,501.27
+-673.23 (-1.37%)
+Nasdaq
+22,516.69
+-346.99 (-1.52%)
+VIX (Fear Index)
+23.57
++4.02 (+20.56%)
+Strait of Hormuz
+SUSPENDED
+~20% global oil transit
+ Updated 12:41:39 AM
+Broader U.S. Costs — Iran & Proxy Conflicts
+Personnel deployment (~50,000 troops)
+Fully burdened cost $500–$1,200/day per service member across CENTCOM AOR: Kuwait 13,500, Qatar 10,000, Bahrain 8,300, Jordan 4,000, 2 CSGs 13,400, plus surge forces
+$40,000,000/day
+Naval + aircraft operations
+Combined: 2 CSGs ($13,000,000–$17,400,000), 7 DDGs ($1,600,000), 6 LCS ($1,200,000–$2,600,000), 13 aircraft types ($30,000,000–$70,000,000). Full O&S basis.
+~$70,000,000/day
+Naval forces (2 CSGs, 7 DDGs, 6 LCS)
+$16,000,000–$28,000,000/day
+Aircraft ops (13 types deployed)
+$30,000,000–$70,000,000/day
+3 U.S. aircraft lost (friendly fire from Kuwait)
+$90,000,000 per airframe — Feb 28, 2026; Kuwaiti air defense misidentification
+$270,000,000
+First 24 hours total expenditure
+Anadolou Agency / Al Jazeera estimate of first 24 hours of Operation Epic Fury. Note: this likely captures only discrete/observable costs (munitions, assets). Our model adds ~$380M/day in operational burn (personnel, fuel, naval ops, overhead) on top.
+$779,000,000
+Munitions replenishment premium
+Gap between unit cost paid and replacement production cost. Tomahawk production was ~100/yr; RTX scaling to 1,000+/yr takes years. JASSM-ER backlog 18–24 months.
+$50,000,000–$100,000,000+
+Operation timeline extension
+Trump indicates operations likely to last 4-5 weeks, prepared to go longer. At current ~$220,000,000/day rate, this suggests $6,200,000,000–$7,700,000,000 total cost projection.
+4-5 weeks estimated duration
+Est. munitions expended (first 72 hrs)
+Tomahawks, JASSMs, JDAMs, MOPs, air-to-air. Replacement cost includes surge production premium.
+$910,150,000 (repl: $978,750,000)
+For Comparison
+Post-9/11 Wars: $8,000,000,000,000 over 20 years (~$300,000,000/day avg.)
+3 aircraft lost to friendly fire (Feb 28): $270,000,000 — equiv. to 3,375 teacher salaries for a year
+Iraq War avg. oil price: ~$72/bbl (approx. $100+ in 2026 dollars)
+Iran-Iraq War (1980–88): $622,000,000,000 total (est. 9 years of Iran's GDP)
+U.S. national debt interest: $1,000,000,000,000 projected for 2026 alone
+Every $1,000,000 in military spending creates ~5 jobs. The same $1,000,000 creates ~13 in education, ~9 in healthcare.
+Methodology & Sources
+Running estimate uses a three-phase bottom-up cost model: ~$380,000,000/day for initial strikes (Days 0–3), ~$220,000,000/day for sustained operations (Days 3–10), ~$155,000,000/day for air dominance/ISR-heavy phase (Day 10+). Each phase is built from seven sourced components: personnel ($40,000,000/day, ~50,000 deployed), naval forces ($22,000,000/day for 2 CSGs, 7 DDGs, 6 LCS), aircraft operations ($48,000,000/day across 12 airframe types at full O&S per-hour rates), fuel & logistics ($15,000,000/day), non-tracked ordnance ($35,000,000/day), C4ISR/cyber/space ($10,000,000/day), and overhead/unmodeled costs ($50,000,000/day). Naval + aircraft combined: ~$70,000,000/day during active operations.
+
+Discrete one-time costs (aircraft losses, high-value cruise missiles, bunker busters) are tracked separately and added to the running total. Munitions costs use DoD procurement unit costs; actual replacement/replenishment costs are 10–20% higher due to surge production premiums and supply chain constraints.
+
+On the "overhead" category: Bottom-up defense cost models typically capture 60–75% of true costs (per CBO and RAND methodology notes). The remainder includes classified programs, ~25,000 contractor personnel, allied force coordination, surge deployment overhead, combat search & rescue, MEDEVAC, base hardening, and other friction costs that are real but not directly observable from open sources.
+
+Not included: Long-term veteran healthcare (historically 2–4× direct war costs over decades), economic opportunity costs, indirect costs from energy market disruption (oil up ~15%), allied nation expenditures, or environmental remediation. These omissions mean the true total taxpayer cost will be significantly higher than shown.
+
+Sources: DoD Comptroller FY2024/25 reimbursable flight-hour rates · CBO June 2025 F-35 report · GAO aircraft sustainment reports · TRANSCOM airlift rates · Defense News ship operating costs · GAO-22-105387 LCS costs · Brown Univ. Costs of War Project · National Priorities Project at IPS · USNI News Fleet Tracker · DLA Energy fuel prices · Stephen Semler CSG analysis · Stimson Center · SIPRI · RTX Tomahawk production data · Yahoo Finance (live market data)

@@ -1,0 +1,20 @@
+{
+  "currency": "IRR",
+  "base_year": "1403 (2024-2025)",
+  "items": [
+    {
+      "id": "mosalla",
+      "name_en": "Tehran Mosalla Completion",
+      "annual_budget": 1000000000000,
+      "source": "Budget Law Table 17",
+      "confidence": 5
+    },
+    {
+      "id": "propaganda_org",
+      "name_en": "Islamic Propaganda Organization",
+      "annual_budget": 4000000000000,
+      "source": "Budget Law Table 7",
+      "confidence": 5
+    }
+  ]
+}

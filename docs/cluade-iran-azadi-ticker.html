@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ایران آزاد — سود آزادی</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --green: #2ecc71;
+    --green-dark: #27ae60;
+    --gold: #f1c40f;
+    --red: #e74c3c;
+    --bg: #0a0f0a;
+    --surface: #0f1a0f;
+    --border: #1e3a1e;
+    --text: #e8f5e9;
+    --muted: #5a7a5a;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Vazirmatn', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Animated background */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background: 
+      radial-gradient(ellipse 80% 50% at 20% 20%, rgba(46,204,113,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 40% at 80% 80%, rgba(241,196,15,0.04) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .noise {
+    position: fixed;
+    inset: 0;
+    opacity: 0.025;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Header */
+  header {
+    padding: 48px 0 32px;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+  }
+
+  .live-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(46,204,113,0.1);
+    border: 1px solid rgba(46,204,113,0.3);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--green);
+    margin-bottom: 24px;
+    text-transform: uppercase;
+  }
+
+  .pulse {
+    width: 8px; height: 8px;
+    background: var(--green);
+    border-radius: 50%;
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.4; transform: scale(0.8); }
+  }
+
+  h1 {
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 900;
+    line-height: 1.1;
+    color: #fff;
+    margin-bottom: 12px;
+  }
+
+  h1 span { color: var(--green); }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  /* Main ticker */
+  .main-ticker {
+    background: linear-gradient(135deg, rgba(46,204,113,0.08), rgba(46,204,113,0.02));
+    border: 1px solid rgba(46,204,113,0.2);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 40px 0 32px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .main-ticker::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--green), transparent);
+    animation: scanline 3s linear infinite;
+  }
+
+  @keyframes scanline {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+
+  .main-label {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .main-value {
+    font-size: clamp(36px, 8vw, 72px);
+    font-weight: 900;
+    color: var(--green);
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    margin-bottom: 8px;
+    text-shadow: 0 0 40px rgba(46,204,113,0.4);
+  }
+
+  .main-unit {
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  /* Cards grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 24px;
+    transition: border-color 0.3s, transform 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    border-color: rgba(46,204,113,0.3);
+    transform: translateY(-2px);
+  }
+
+  .card-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+  }
+
+  .card-label {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  .card-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--green);
+    font-variant-numeric: tabular-nums;
+    margin-bottom: 4px;
+  }
+
+  .card-value.gold { color: var(--gold); }
+  .card-value.white { color: #fff; }
+
+  .card-sub {
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.5;
+  }
+
+  .trend {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 11px;
+    padding: 3px 8px;
+    border-radius: 100px;
+    margin-top: 8px;
+  }
+
+  .trend.up { background: rgba(46,204,113,0.1); color: var(--green); }
+  .trend.down { background: rgba(231,76,60,0.1); color: var(--red); }
+
+  /* Comparison bar */
+  .compare-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 28px;
+    margin-bottom: 32px;
+  }
+
+  .compare-title {
+    font-size: 13px;
+    color: var(--muted);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .compare-row {
+    margin-bottom: 20px;
+  }
+
+  .compare-row:last-child { margin-bottom: 0; }
+
+  .compare-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .compare-now { color: var(--red); }
+  .compare-free { color: var(--green); }
+
+  .bar-track {
+    height: 8px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .bar-fill {
+    height: 100%;
+    border-radius: 100px;
+    transition: width 2s ease;
+  }
+
+  .bar-fill.red { background: var(--red); }
+  .bar-fill.green { background: var(--green); }
+
+  .compare-metric {
+    font-size: 13px;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+
+  /* Scenario cards */
+  .scenario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .scenario-card {
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+  }
+
+  .scenario-card.now {
+    background: rgba(231,76,60,0.05);
+    border: 1px solid rgba(231,76,60,0.2);
+  }
+
+  .scenario-card.free {
+    background: rgba(46,204,113,0.05);
+    border: 1px solid rgba(46,204,113,0.2);
+  }
+
+  .scenario-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  .scenario-card.now .scenario-title { color: var(--red); }
+  .scenario-card.free .scenario-title { color: var(--green); }
+
+  .scenario-item {
+    font-size: 13px;
+    color: var(--muted);
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .scenario-item:last-child { border-bottom: none; }
+
+  /* Quote */
+  .quote {
+    text-align: center;
+    padding: 32px;
+    border-top: 1px solid var(--border);
+    margin-top: 16px;
+  }
+
+  .quote-text {
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(255,255,255,0.7);
+    max-width: 600px;
+    margin: 0 auto 12px;
+    font-style: italic;
+  }
+
+  .quote-author {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 1px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 24px 0 40px;
+    text-align: center;
+    border-top: 1px solid var(--border);
+    font-size: 12px;
+    color: var(--muted);
+    line-height: 1.8;
+  }
+
+  /* Ticker tape */
+  .ticker-tape {
+    background: rgba(46,204,113,0.05);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 0;
+    overflow: hidden;
+    margin: 0 -20px;
+    margin-top: -1px;
+  }
+
+  .tape-inner {
+    display: flex;
+    gap: 60px;
+    animation: scroll 30s linear infinite;
+    white-space: nowrap;
+  }
+
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  .tape-item {
+    font-size: 12px;
+    color: var(--green);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tape-sep { color: var(--border); }
+
+  @media (max-width: 600px) {
+    .scenario { grid-template-columns: 1fr; }
+    .main-ticker { padding: 24px; }
+    header { padding: 32px 0 24px; }
+  }
+</style>
+</head>
+<body>
+<div class="noise"></div>
+
+<div class="ticker-tape">
+  <div class="tape-inner" id="tape">
+  </div>
+</div>
+
+<div class="container">
+
+  <header>
+    <div class="live-badge">
+      <div class="pulse"></div>
+      برآورد زنده
+    </div>
+    <h1>ایران <span>آزاد</span> — سود آزادی</h1>
+    <p class="subtitle">اگر جمهوری اسلامی نبود، ایرانیان چقدر بهتر بودند؟</p>
+  </header>
+
+  <!-- Main counter -->
+  <div class="main-ticker">
+    <div class="main-label">درآمد نفتی از دست‌رفته توسط مردم ایران — از ۱۳۵۷ تا امروز</div>
+    <div class="main-value" id="oil-lost">۰</div>
+    <div class="main-unit">میلیارد دلار آمریکا</div>
+  </div>
+
+  <!-- Cards -->
+  <div class="grid">
+    <div class="card">
+      <div class="card-icon">📉</div>
+      <div class="card-label">ارزش ریال در برابر دلار</div>
+      <div class="card-value" id="rial-val">۷۴,۰۰۰</div>
+      <div class="card-sub">در ۱۳۵۷ برابر بود با ۷۰ ریال = ۱ دلار</div>
+      <span class="trend down">↓ ۹۹.۹٪ کاهش ارزش</span>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🧠</div>
+      <div class="card-label">فرار مغزها (تخمین)</div>
+      <div class="card-value white" id="brain-drain">۱۵۰,۰۰۰+</div>
+      <div class="card-sub">متخصص سالانه کشور را ترک می‌کنند — رتبه اول جهانی</div>
+      <span class="trend down">↓ بحران ملی</span>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🌐</div>
+      <div class="card-label">بودجه سپاه و بسیج</div>
+      <div class="card-value gold" id="irgc-budget">۳۰+</div>
+      <div class="card-sub">میلیارد دلار سالانه — معادل بودجه آموزش و پرورش</div>
+      <span class="trend down">↑ هر سال بیشتر</span>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">⛽</div>
+      <div class="card-label">درآمد نفت سرانه (اگر آزاد بودیم)</div>
+      <div class="card-value" id="oil-per-capita">~$۲,۸۰۰</div>
+      <div class="card-sub">در سال به ازای هر ایرانی — در مقایسه با نروژ $۱۷,۰۰۰</div>
+      <span class="trend up">↑ پتانسیل بالقوه</span>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">🎓</div>
+      <div class="card-label">نرخ بیکاری جوانان</div>
+      <div class="card-value white">~۲۷٪</div>
+      <div class="card-sub">رسمی — غیررسمی احتمالاً بالای ۴۰٪ است</div>
+      <span class="trend down">↑ بدتر می‌شود</span>
+    </div>
+
+    <div class="card">
+      <div class="card-icon">✈️</div>
+      <div class="card-label">ایرانی‌های مهاجرت‌کرده</div>
+      <div class="card-value white">~۶ میلیون</div>
+      <div class="card-sub">دیاسپورای ایرانی — یکی از بزرگترین‌های جهان</div>
+      <span class="trend down">↑ هر سال بیشتر</span>
+    </div>
+  </div>
+
+  <!-- Comparison bars -->
+  <div class="compare-section">
+    <div class="compare-title">ایران امروز در مقابل پتانسیل واقعی</div>
+
+    <div class="compare-row">
+      <div class="compare-metric">رتبه آزادی مطبوعات (هرچه کمتر بهتر)</div>
+      <div class="compare-labels">
+        <span class="compare-now">ایران: رتبه ۱۷۶ از ۱۸۰</span>
+        <span class="compare-free">ترکیه: ۱۵۸ | امارات: ۱۴۷</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill red" style="width: 97%"></div>
+      </div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-metric">GDP سرانه (برابری قدرت خرید)</div>
+      <div class="compare-labels">
+        <span class="compare-now">ایران: ~$۱۵,۰۰۰</span>
+        <span class="compare-free">ترکیه: $۳۵,۰۰۰ | عربستان: $۵۴,۰۰۰</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill green" style="width: 30%"></div>
+      </div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-metric">سرمایه‌گذاری خارجی مستقیم (FDI)</div>
+      <div class="compare-labels">
+        <span class="compare-now">ایران: نزدیک صفر (تحریم)</span>
+        <span class="compare-free">پتانسیل با توجه به منابع: $۳۰B+</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill red" style="width: 3%"></div>
+      </div>
+    </div>
+
+    <div class="compare-row">
+      <div class="compare-metric">شاخص توسعه انسانی (HDI)</div>
+      <div class="compare-labels">
+        <span class="compare-now">ایران: ۰.۷۷۴ — رتبه ۷۸</span>
+        <span class="compare-free">با آزادی و بدون تحریم: پتانسیل ۰.۸۵+</span>
+      </div>
+      <div class="bar-track">
+        <div class="bar-fill green" style="width: 60%"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Before / After -->
+  <div class="scenario">
+    <div class="scenario-card now">
+      <div class="scenario-title">☠️ ایران با ولایت فقیه</div>
+      <div class="scenario-item">❌ تحریم‌های فلج‌کننده اقتصادی</div>
+      <div class="scenario-item">❌ سانسور اینترنت و VPN اجباری</div>
+      <div class="scenario-item">❌ زنان بدون حق انتخاب پوشش</div>
+      <div class="scenario-item">❌ درآمد نفت به سپاه و حماس</div>
+      <div class="scenario-item">❌ قوه قضائیه ابزار سرکوب</div>
+      <div class="scenario-item">❌ بهترین‌ها فرار می‌کنند</div>
+      <div class="scenario-item">❌ دلار ۷۴ هزار تومان</div>
+      <div class="scenario-item">❌ جنگ‌های نیابتی در منطقه</div>
+    </div>
+
+    <div class="scenario-card free">
+      <div class="scenario-title">🌱 ایران آزاد و سکولار</div>
+      <div class="scenario-item">✅ ادغام در اقتصاد جهانی</div>
+      <div class="scenario-item">✅ اینترنت آزاد — هاب تکنولوژی</div>
+      <div class="scenario-item">✅ حقوق برابر شهروندی</div>
+      <div class="scenario-item">✅ درآمد نفت برای مردم</div>
+      <div class="scenario-item">✅ قوه قضائیه مستقل</div>
+      <div class="scenario-item">✅ بازگشت دیاسپورا</div>
+      <div class="scenario-item">✅ ریال قوی‌تر</div>
+      <div class="scenario-item">✅ صلح و ثبات منطقه‌ای</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    <p class="quote-text">«ایران کشور بزرگی است. مردم ایران لایق چیزی خیلی بهتر از این هستند.»</p>
+    <p class="quote-author">— یک ایرانی معمولی، هرجای دنیا</p>
+  </div>
+
+  <footer>
+    <p>این صفحه یک برآورد آموزشی است بر اساس داده‌های عمومی و تحقیقات اقتصادی.</p>
+    <p>منابع: بانک جهانی · IMF · گزارشگران بدون مرز · UNHCR · گزارش‌های CBO · تحقیقات دانشگاه براون</p>
+    <br>
+    <p style="color: #2ecc71; font-size: 13px;">ایران یکبار بزرگ بوده و دوباره خواهد بود 🦁</p>
+  </footer>
+
+</div>
+
+<script>
+  // Oil revenue lost counter — starts from 1979, estimate $2T+ lost/diverted
+  // Running total growing in real time
+  const startValue = 2100; // billion USD approximate total since 1979
+  const dailyBurn = 82; // million per day current
+  
+  function formatPersian(num) {
+    return Math.round(num).toLocaleString('fa-IR');
+  }
+
+  // Oil lost — show running total growing
+  let oilBase = 2100000; // millions
+  function updateOil() {
+    oilBase += (dailyBurn / 86400); // per second
+    const billions = (oilBase / 1000).toFixed(1);
+    document.getElementById('oil-lost').textContent = 
+      parseFloat(billions).toLocaleString('fa-IR') + ' میلیارد $';
+  }
+
+  // Rial — fake live fluctuation
+  let rialBase = 74000;
+  function updateRial() {
+    const fluc = (Math.random() - 0.48) * 200;
+    rialBase = Math.max(73000, rialBase + fluc);
+    document.getElementById('rial-val').textContent = 
+      Math.round(rialBase).toLocaleString('fa-IR') + ' تومان';
+  }
+
+  // Tape content
+  const tapeItems = [
+    '📉 تورم: ~۴۵٪ سالانه',
+    '🚫 تحریم‌های فعال: ۵۰۰+',
+    '✈️ ایرانی مهاجرت‌کرده از ۱۴۰۱: +۸۰۰,۰۰۰',
+    '💰 ارزش ریال از ۱۳۵۷: ۹۹.۹٪ کاهش',
+    '🧠 رتبه فرار مغزها: اول جهان',
+    '⛽ ایران: ۴ام ذخایر نفت — ۷۸م درآمد سرانه',
+    '🌐 سرعت اینترنت ایران: رتبه ۱۰۵ جهان',
+    '📰 آزادی مطبوعات: رتبه ۱۷۶ از ۱۸۰',
+    '🏭 صنعت: ظرفیت بالقوه عظیم — محقق نشده',
+    '🎓 باسوادی: ۸۶٪ — استعداد هدررفته',
+    '📉 تورم: ~۴۵٪ سالانه',
+    '🚫 تحریم‌های فعال: ۵۰۰+',
+    '✈️ ایرانی مهاجرت‌کرده از ۱۴۰۱: +۸۰۰,۰۰۰',
+    '💰 ارزش ریال از ۱۳۵۷: ۹۹.۹٪ کاهش',
+    '🧠 رتبه فرار مغزها: اول جهان',
+    '⛽ ایران: ۴ام ذخایر نفت — ۷۸م درآمد سرانه',
+    '🌐 سرعت اینترنت ایران: رتبه ۱۰۵ جهان',
+    '📰 آزادی مطبوعات: رتبه ۱۷۶ از ۱۸۰',
+    '🏭 صنعت: ظرفیت بالقوه عظیم — محقق نشده',
+    '🎓 باسوادی: ۸۶٪ — استعداد هدررفته',
+  ];
+
+  const tape = document.getElementById('tape');
+  tapeItems.forEach((item, i) => {
+    const el = document.createElement('span');
+    el.className = 'tape-item';
+    el.innerHTML = item + (i < tapeItems.length - 1 ? ' <span class="tape-sep">◆</span>' : '');
+    tape.appendChild(el);
+  });
+
+  // Animate bars on load
+  setTimeout(() => {
+    document.querySelectorAll('.bar-fill').forEach(bar => {
+      const w = bar.style.width;
+      bar.style.width = '0';
+      setTimeout(() => { bar.style.width = w; }, 100);
+    });
+  }, 500);
+
+  // Run counters
+  updateOil();
+  setInterval(updateOil, 1000);
+  setInterval(updateRial, 3000);
+
+  // Brain drain counter — slowly increments
+  let brainCount = 150000;
+  setInterval(() => {
+    brainCount += Math.floor(Math.random() * 3);
+    document.getElementById('brain-drain').textContent = 
+      brainCount.toLocaleString('fa-IR') + '+';
+  }, 5000);
+</script>
+</body>
+</html>

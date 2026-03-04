@@ -1,0 +1,156 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-04",
+    "description_fa": "مقایسه ایران با کشورهای همتا",
+    "description_en": "Iran vs peer country comparisons",
+    "methodology_note": "Peer countries selected based on comparable starting GDP per capita in 1977, similar population size, or similar resource endowments. Turkey is primary peer as closest 1977 comparator."
+  },
+  "peers": [
+    {
+      "id": "turkey",
+      "name": {"fa": "ترکیه", "en": "Turkey"},
+      "flag": "🇹🇷",
+      "why_peer": {
+        "fa": "در ۱۹۷۷ درآمد سرانه مشابه ایران داشت. جمعیت مشابه. بدون نفت.",
+        "en": "Similar GDP per capita to Iran in 1977. Similar population. No significant oil."
+      },
+      "data": {
+        "gdp_per_capita_1977_usd2024": 5500,
+        "gdp_per_capita_2024_ppp": 35000,
+        "growth_multiple": 6.4,
+        "hdi_2023": 0.855,
+        "press_freedom_rank_2024": 158,
+        "female_labor_participation": 34,
+        "inflation_avg_annual": 18,
+        "fdi_2023_bn": 13
+      }
+    },
+    {
+      "id": "south_korea",
+      "name": {"fa": "کره جنوبی", "en": "South Korea"},
+      "flag": "🇰🇷",
+      "why_peer": {
+        "fa": "در ۱۹۷۷ پایین‌تر از ایران بود. نشان می‌دهد چه پتانسیلی وجود داشت.",
+        "en": "Below Iran in 1977. Shows the potential ceiling — what Iran could have become."
+      },
+      "data": {
+        "gdp_per_capita_1977_usd2024": 4500,
+        "gdp_per_capita_2024_ppp": 53000,
+        "growth_multiple": 11.8,
+        "hdi_2023": 0.929,
+        "press_freedom_rank_2024": 62,
+        "female_labor_participation": 54,
+        "inflation_avg_annual": 4,
+        "fdi_2023_bn": 18
+      }
+    },
+    {
+      "id": "malaysia",
+      "name": {"fa": "مالزی", "en": "Malaysia"},
+      "flag": "🇲🇾",
+      "why_peer": {
+        "fa": "کشور مسلمان، نفت‌خیز، توسعه‌یافته. نشان می‌دهد اسلام مانع رشد نیست.",
+        "en": "Muslim-majority country with oil, now developed. Shows Islam isn't a barrier to growth."
+      },
+      "data": {
+        "gdp_per_capita_1977_usd2024": 3800,
+        "gdp_per_capita_2024_ppp": 35000,
+        "growth_multiple": 9.2,
+        "hdi_2023": 0.807,
+        "press_freedom_rank_2024": 107,
+        "female_labor_participation": 53,
+        "inflation_avg_annual": 3,
+        "fdi_2023_bn": 7
+      }
+    },
+    {
+      "id": "uae",
+      "name": {"fa": "امارات متحده عربی", "en": "UAE"},
+      "flag": "🇦🇪",
+      "why_peer": {
+        "fa": "کشور نفت‌خیز منطقه. نشان می‌دهد با درآمد نفت چه می‌توان ساخت.",
+        "en": "Regional oil country. Shows what can be built with oil revenue under pragmatic governance."
+      },
+      "data": {
+        "gdp_per_capita_1977_usd2024": 20000,
+        "gdp_per_capita_2024_ppp": 85000,
+        "growth_multiple": 4.2,
+        "hdi_2023": 0.937,
+        "press_freedom_rank_2024": 147,
+        "female_labor_participation": 28,
+        "inflation_avg_annual": 3,
+        "fdi_2023_bn": 30
+      }
+    },
+    {
+      "id": "iran",
+      "name": {"fa": "ایران", "en": "Iran"},
+      "flag": "🇮🇷",
+      "is_subject": true,
+      "data": {
+        "gdp_per_capita_1977_usd2024": 8500,
+        "gdp_per_capita_2024_ppp": 15000,
+        "growth_multiple": 1.8,
+        "hdi_2023": 0.774,
+        "press_freedom_rank_2024": 176,
+        "female_labor_participation": 16,
+        "inflation_avg_annual": 27,
+        "fdi_2023_bn": 3
+      }
+    }
+  ],
+  "opportunity_costs": [
+    {
+      "id": "proxy_war_vs_hospitals",
+      "amount": 100000000000,
+      "title": {"fa": "۱۰۰ میلیارد هزینه جنگ‌های نیابتی", "en": "$100B in Proxy Wars"},
+      "could_have_bought": [
+        {
+          "item_fa": "۵۰۰ بیمارستان مدرن ۱۰۰۰ تختخوابی",
+          "item_en": "500 modern 1000-bed hospitals",
+          "unit_cost": 200000000
+        },
+        {
+          "item_fa": "۲۰ سال پوشش بیمه درمانی همگانی",
+          "item_en": "20 years of universal health coverage",
+          "unit_cost": 5000000000,
+          "unit": "per year"
+        },
+        {
+          "item_fa": "شبکه ملی قطار سریع‌السیر",
+          "item_en": "National high-speed rail network",
+          "unit_cost": 100000000000
+        }
+      ]
+    },
+    {
+      "id": "irgc_empire_vs_education",
+      "amount": 150000000000,
+      "title": {"fa": "۱۵۰ میلیارد امپراتوری سپاه", "en": "$150B IRGC Economic Empire"},
+      "could_have_bought": [
+        {
+          "item_fa": "۵۰ دانشگاه در سطح جهانی",
+          "item_en": "50 world-class universities",
+          "unit_cost": 3000000000
+        },
+        {
+          "item_fa": "صندوق ثروت ملی برای نسل‌های آینده",
+          "item_en": "Sovereign wealth fund for future generations",
+          "unit_cost": 150000000000
+        }
+      ]
+    },
+    {
+      "id": "currency_devaluation_personal",
+      "title": {"fa": "اثر تورم بر یک خانواده معمولی", "en": "Inflation Impact on Average Family"},
+      "scenario": {
+        "fa": "خانواده‌ای که در ۱۳۵۷ یک میلیون تومان پس‌انداز داشت — الان چقدر ارزش دارد؟",
+        "en": "A family with 1 million Tomans savings in 1978 — what is it worth today?"
+      },
+      "then_value_usd_equiv": 142857,
+      "now_value_usd_equiv": 17,
+      "purchasing_power_loss_percent": 99.99
+    }
+  ]
+}

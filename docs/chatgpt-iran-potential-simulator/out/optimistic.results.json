@@ -1,0 +1,166 @@
+{
+  "scenario": "optimistic",
+  "generated_at": "2026-03-03T21:19:06.038Z",
+  "results": [
+    {
+      "year": 2024,
+      "g": 0.096,
+      "gdp_usd": 400000000000,
+      "population": 85000000,
+      "gdp_per_capita_usd": 4706,
+      "government_revenue_usd": 150300000000,
+      "government_revenue_gross_usd": 167000000000,
+      "leakage_usd": 16700000000
+    },
+    {
+      "year": 2025,
+      "g": 0.096,
+      "gdp_usd": 438400000000,
+      "population": 85850000,
+      "gdp_per_capita_usd": 5107,
+      "government_revenue_usd": 155829600000,
+      "government_revenue_gross_usd": 173144000000,
+      "leakage_usd": 17314400000
+    },
+    {
+      "year": 2026,
+      "g": 0.096,
+      "gdp_usd": 480486400000,
+      "population": 86708500,
+      "gdp_per_capita_usd": 5541,
+      "government_revenue_usd": 161890041600,
+      "government_revenue_gross_usd": 179877824000,
+      "leakage_usd": 17987782400
+    },
+    {
+      "year": 2027,
+      "g": 0.096,
+      "gdp_usd": 526613094400,
+      "population": 87575585,
+      "gdp_per_capita_usd": 6013,
+      "government_revenue_usd": 168532285594,
+      "government_revenue_gross_usd": 187258095104,
+      "leakage_usd": 18725809510
+    },
+    {
+      "year": 2028,
+      "g": 0.096,
+      "gdp_usd": 577167951462,
+      "population": 88451341,
+      "gdp_per_capita_usd": 6525,
+      "government_revenue_usd": 175812185011,
+      "government_revenue_gross_usd": 195346872234,
+      "leakage_usd": 19534687223
+    },
+    {
+      "year": 2029,
+      "g": 0.096,
+      "gdp_usd": 632576074803,
+      "population": 89335854,
+      "gdp_per_capita_usd": 7081,
+      "government_revenue_usd": 183790954772,
+      "government_revenue_gross_usd": 204212171968,
+      "leakage_usd": 20421217197
+    },
+    {
+      "year": 2030,
+      "g": 0.096,
+      "gdp_usd": 693303377984,
+      "population": 90229213,
+      "gdp_per_capita_usd": 7684,
+      "government_revenue_usd": 192535686430,
+      "government_revenue_gross_usd": 213928540477,
+      "leakage_usd": 21392854048
+    },
+    {
+      "year": 2031,
+      "g": 0.096,
+      "gdp_usd": 759860502270,
+      "population": 91131505,
+      "gdp_per_capita_usd": 8338,
+      "government_revenue_usd": 202119912327,
+      "government_revenue_gross_usd": 224577680363,
+      "leakage_usd": 22457768036
+    },
+    {
+      "year": 2032,
+      "g": 0.096,
+      "gdp_usd": 832807110488,
+      "population": 92042820,
+      "gdp_per_capita_usd": 9048,
+      "government_revenue_usd": 212624223910,
+      "government_revenue_gross_usd": 236249137678,
+      "leakage_usd": 23624913768
+    },
+    {
+      "year": 2033,
+      "g": 0.096,
+      "gdp_usd": 912756593095,
+      "population": 92963248,
+      "gdp_per_capita_usd": 9818,
+      "government_revenue_usd": 224136949406,
+      "government_revenue_gross_usd": 249041054895,
+      "leakage_usd": 24904105490
+    },
+    {
+      "year": 2034,
+      "g": 0.096,
+      "gdp_usd": 1000381226032,
+      "population": 93892881,
+      "gdp_per_capita_usd": 10654,
+      "government_revenue_usd": 236754896549,
+      "government_revenue_gross_usd": 263060996165,
+      "leakage_usd": 26306099617
+    },
+    {
+      "year": 2035,
+      "g": 0.096,
+      "gdp_usd": 1096417823731,
+      "population": 94831809,
+      "gdp_per_capita_usd": 11562,
+      "government_revenue_usd": 250584166617,
+      "government_revenue_gross_usd": 278426851797,
+      "leakage_usd": 27842685180
+    },
+    {
+      "year": 2036,
+      "g": 0.096,
+      "gdp_usd": 1201673934810,
+      "population": 95780128,
+      "gdp_per_capita_usd": 12546,
+      "government_revenue_usd": 265741046613,
+      "government_revenue_gross_usd": 295267829570,
+      "leakage_usd": 29526782957
+    },
+    {
+      "year": 2037,
+      "g": 0.096,
+      "gdp_usd": 1317034632551,
+      "population": 96737929,
+      "gdp_per_capita_usd": 13614,
+      "government_revenue_usd": 282352987087,
+      "government_revenue_gross_usd": 313725541208,
+      "leakage_usd": 31372554121
+    },
+    {
+      "year": 2038,
+      "g": 0.096,
+      "gdp_usd": 1443469957276,
+      "population": 97705308,
+      "gdp_per_capita_usd": 14774,
+      "government_revenue_usd": 300559673848,
+      "government_revenue_gross_usd": 333955193164,
+      "leakage_usd": 33395519316
+    },
+    {
+      "year": 2039,
+      "g": 0.096,
+      "gdp_usd": 1582043073175,
+      "population": 98682361,
+      "gdp_per_capita_usd": 16032,
+      "government_revenue_usd": 320514202537,
+      "government_revenue_gross_usd": 356126891708,
+      "leakage_usd": 35612689171
+    }
+  ]
+}

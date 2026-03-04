@@ -1,0 +1,301 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-04",
+    "description_fa": "شاخص‌های اقتصاد کلان ایران از ۱۳۵۷ تا امروز",
+    "description_en": "Iran macroeconomic indicators from 1979 to present",
+    "methodology_doc": "https://github.com/YOUR_ORG/iran-freedom-data/blob/main/METHODOLOGY.md"
+  },
+  "metrics": [
+    {
+      "id": "gdp_per_capita_iran_2024",
+      "category": "macroeconomics",
+      "subcategory": "gdp",
+      "title": {
+        "fa": "GDP سرانه ایران ۲۰۲۴ (PPP)",
+        "en": "Iran GDP Per Capita 2024 (PPP)"
+      },
+      "value": 15000,
+      "value_min": 13000,
+      "value_max": 17000,
+      "unit": "USD",
+      "display_format": "currency",
+      "direction": "neutral",
+      "description": {
+        "fa": "درآمد سرانه ایران بر اساس برابری قدرت خرید در سال ۲۰۲۴",
+        "en": "Iran's per capita income adjusted for purchasing power parity in 2024"
+      },
+      "confidence": "high",
+      "sources": ["imf_weo_2024", "world_bank_api_2024"],
+      "last_updated": "2024-10-01",
+      "is_live": false,
+      "related_metrics": ["gdp_per_capita_turkey_2024", "gdp_per_capita_iran_1977"]
+    },
+    {
+      "id": "gdp_per_capita_iran_1977",
+      "category": "macroeconomics",
+      "subcategory": "gdp",
+      "title": {
+        "fa": "GDP سرانه ایران ۱۹۷۷ (دلار ۲۰۲۴)",
+        "en": "Iran GDP Per Capita 1977 (2024 USD)"
+      },
+      "value": 8500,
+      "value_min": 7500,
+      "value_max": 9500,
+      "unit": "USD",
+      "display_format": "currency",
+      "direction": "neutral",
+      "description": {
+        "fa": "درآمد سرانه ایران در آستانه انقلاب، تعدیل‌شده برای تورم ۲۰۲۴",
+        "en": "Iran's per capita income on the eve of the revolution, adjusted for 2024 inflation"
+      },
+      "confidence": "medium",
+      "sources": ["world_bank_historical", "penn_world_tables"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "note": {
+        "fa": "محاسبه دقیق به روش deflator بستگی دارد؛ محدوده ۷k-9k قابل دفاع است",
+        "en": "Exact figure depends on deflator methodology; $7k-9k range is defensible"
+      }
+    },
+    {
+      "id": "gdp_per_capita_turkey_2024",
+      "category": "macroeconomics",
+      "subcategory": "gdp_comparison",
+      "title": {
+        "fa": "GDP سرانه ترکیه ۲۰۲۴ (PPP)",
+        "en": "Turkey GDP Per Capita 2024 (PPP)"
+      },
+      "value": 35000,
+      "unit": "USD",
+      "display_format": "currency",
+      "direction": "neutral",
+      "description": {
+        "fa": "در ۱۹۷۷ ترکیه پایین‌تر از ایران بود. امروز ۲.۳ برابر ایران است.",
+        "en": "In 1977, Turkey was below Iran. Today Turkey is 2.3x Iran's GDP per capita."
+      },
+      "confidence": "high",
+      "sources": ["imf_weo_2024"],
+      "last_updated": "2024-10-01",
+      "is_live": false
+    },
+    {
+      "id": "gdp_per_capita_south_korea_2024",
+      "category": "macroeconomics",
+      "subcategory": "gdp_comparison",
+      "title": {
+        "fa": "GDP سرانه کره جنوبی ۲۰۲۴ (PPP)",
+        "en": "South Korea GDP Per Capita 2024 (PPP)"
+      },
+      "value": 53000,
+      "unit": "USD",
+      "display_format": "currency",
+      "direction": "neutral",
+      "description": {
+        "fa": "کره جنوبی در ۱۹۷۷ نصف ایران بود. امروز ۳.۵ برابر ایران است.",
+        "en": "South Korea in 1977 was half Iran's GDP. Today it's 3.5x Iran's."
+      },
+      "confidence": "high",
+      "sources": ["imf_weo_2024"],
+      "last_updated": "2024-10-01",
+      "is_live": false
+    },
+    {
+      "id": "cumulative_gdp_gap_turkey",
+      "category": "macroeconomics",
+      "subcategory": "opportunity_cost",
+      "title": {
+        "fa": "شکاف تجمعی GDP نسبت به ترکیه (۴۶ سال)",
+        "en": "Cumulative GDP Gap vs Turkey Trajectory (46 years)"
+      },
+      "value": 3200000000000,
+      "unit": "USD",
+      "display_format": "currency_trillions",
+      "direction": "negative",
+      "description": {
+        "fa": "مجموع تفاوت GDP واقعی ایران با GDP فرضی اگر ایران مثل ترکیه رشد کرده بود",
+        "en": "Sum of annual GDP shortfall if Iran had followed Turkey's growth trajectory since 1977"
+      },
+      "confidence": "medium",
+      "methodology_note": {
+        "fa": "فرض: هر دو کشور در ۱۹۷۷ با شروع مشابه. اختلاف نرخ رشد سالانه × جمعیت × ۴۶ سال. این محاسبه counterfactual است — نه آنچه از دست رفته، بلکه آنچه می‌توانست باشد.",
+        "en": "Assumption: both countries at similar starting point in 1977. Annual growth rate differential × population × 46 years. This is a counterfactual — not what was lost but what could have been."
+      },
+      "sources": ["imf_weo_2024", "world_bank_api_2024", "own_calculation"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "comparable_items": [
+        {
+          "label_fa": "۳۰ سال بودجه کامل آموزش و پرورش ایران",
+          "label_en": "30 years of Iran's entire education budget",
+          "value": 3200000000000
+        },
+        {
+          "label_fa": "۵۰۰ تا بیمارستان مدرن ۱۰۰۰ تختخوابی",
+          "label_en": "500 modern 1000-bed hospitals",
+          "value": 3200000000000
+        }
+      ]
+    },
+    {
+      "id": "usd_irr_1978",
+      "category": "macroeconomics",
+      "subcategory": "currency",
+      "title": {
+        "fa": "نرخ دلار ۱۳۵۷",
+        "en": "USD/IRR Exchange Rate 1978"
+      },
+      "value": 70,
+      "unit": "IRR_per_USD",
+      "display_format": "number",
+      "direction": "neutral",
+      "description": {
+        "fa": "قبل از انقلاب، ۷۰ ریال برابر یک دلار بود",
+        "en": "Before the revolution, 70 rials equaled one US dollar"
+      },
+      "confidence": "high",
+      "sources": ["imf_historical_exchange", "central_bank_iran_archive"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "usd_irr_current",
+      "category": "macroeconomics",
+      "subcategory": "currency",
+      "title": {
+        "fa": "نرخ دلار — بازار آزاد (زنده)",
+        "en": "USD/IRR Rate — Free Market (Live)"
+      },
+      "value": 600000,
+      "unit": "IRR_per_USD",
+      "display_format": "number",
+      "direction": "negative",
+      "description": {
+        "fa": "نرخ لحظه‌ای دلار در بازار آزاد ایران",
+        "en": "Real-time USD rate in Iran's open market"
+      },
+      "confidence": "high",
+      "sources": ["bonbast_com"],
+      "last_updated": "LIVE",
+      "is_live": true,
+      "live_source_url": "https://bonbast.com",
+      "historical_baseline": {
+        "value": 70,
+        "year": 1978
+      },
+      "change_factor": 8571,
+      "change_percent": -99.99
+    },
+    {
+      "id": "cumulative_inflation",
+      "category": "macroeconomics",
+      "subcategory": "currency",
+      "title": {
+        "fa": "تورم تجمعی از ۱۳۵۸ تا ۱۴۰۳",
+        "en": "Cumulative Inflation 1979–2024"
+      },
+      "value": 850000,
+      "unit": "percent",
+      "display_format": "percentage",
+      "direction": "negative",
+      "description": {
+        "fa": "قدرت خرید ریال ۸۵۰ هزار درصد کمتر شده — یعنی هر چیزی که ۱۰۰ تومان قیمت داشت الان ۸۵۰ هزار تومان",
+        "en": "Rial purchasing power declined ~850,000% — something costing 100T now costs ~850,000T"
+      },
+      "confidence": "medium",
+      "sources": ["world_bank_cpi_data", "imf_iran_article_iv"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "average_annual_inflation",
+      "category": "macroeconomics",
+      "subcategory": "currency",
+      "title": {
+        "fa": "میانگین تورم سالانه ۱۹۷۹-۲۰۲۴",
+        "en": "Average Annual Inflation 1979–2024"
+      },
+      "value": 27,
+      "unit": "percent",
+      "display_format": "percentage",
+      "direction": "negative",
+      "description": {
+        "fa": "میانگین تورم سالانه ایران در ۴۶ سال گذشته — یکی از بالاترین‌های دنیا",
+        "en": "Iran's average annual inflation over 46 years — among the world's highest"
+      },
+      "confidence": "high",
+      "sources": ["world_bank_api_2024", "imf_weo_2024"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "oil_revenue_total_1979_2024",
+      "category": "macroeconomics",
+      "subcategory": "oil",
+      "title": {
+        "fa": "کل درآمد نفت ۱۹۷۹-۲۰۲۴",
+        "en": "Total Oil Revenue 1979–2024"
+      },
+      "value": 1800000000000,
+      "unit": "USD",
+      "display_format": "currency_trillions",
+      "direction": "neutral",
+      "description": {
+        "fa": "تخمین کل درآمد صادرات نفت ایران طی ۴۶ سال، بر اساس قیمت‌های تاریخی",
+        "en": "Estimated total oil export revenues over 46 years at historical prices"
+      },
+      "confidence": "medium",
+      "sources": ["eia_iran_data", "opec_asb", "own_calculation"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "note": {
+        "fa": "این رقم ناخالص است — هزینه‌های تولید، تحریم‌های تخفیف، و خرج‌های سپاه کسر نشده",
+        "en": "This is gross — production costs, sanctions discounts, and IRGC diversion not subtracted"
+      }
+    },
+    {
+      "id": "oil_revenue_lost_sanctions",
+      "category": "macroeconomics",
+      "subcategory": "oil",
+      "title": {
+        "fa": "درآمد نفت از دست رفته به خاطر تحریم (۲۰۱۲-۲۰۲۴)",
+        "en": "Oil Revenue Lost to Sanctions (2012–2024)"
+      },
+      "value": 500000000000,
+      "value_min": 400000000000,
+      "value_max": 700000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "تخمین درآمد نفتی که ایران به دلیل تحریم‌های بین‌المللی از دست داد",
+        "en": "Estimated oil revenue lost due to international sanctions and forced discounting"
+      },
+      "confidence": "medium",
+      "sources": ["columbia_sipa_sanctions_study", "imf_iran_article_iv"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "fdi_inflow_2023",
+      "category": "macroeconomics",
+      "subcategory": "investment",
+      "title": {
+        "fa": "سرمایه‌گذاری خارجی مستقیم ۲۰۲۳",
+        "en": "FDI Inflow 2023"
+      },
+      "value": 3000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "سرمایه‌گذاری خارجی ایران نزدیک صفر است — در مقایسه با ترکیه ۱۳ میلیارد و امارات ۳۰ میلیارد",
+        "en": "Iran's FDI near zero — vs Turkey $13B and UAE $30B for same year"
+      },
+      "confidence": "high",
+      "sources": ["unctad_wir_2024"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    }
+  ]
+}

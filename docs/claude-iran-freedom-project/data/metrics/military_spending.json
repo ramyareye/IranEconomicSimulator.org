@@ -1,0 +1,290 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-04",
+    "description_fa": "هزینه‌های نظامی، سپاه، جنگ‌های نیابتی و برنامه هسته‌ای",
+    "description_en": "Military spending, IRGC, proxy wars and nuclear program costs"
+  },
+  "metrics": [
+    {
+      "id": "irgc_true_budget",
+      "category": "military",
+      "subcategory": "irgc",
+      "title": {
+        "fa": "بودجه واقعی سپاه پاسداران (تخمین)",
+        "en": "True IRGC Budget (Estimate)"
+      },
+      "value": 27500000000,
+      "value_min": 20000000000,
+      "value_max": 35000000000,
+      "unit": "USD_per_year",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "بودجه واقعی سپاه شامل بودجه رسمی + درآمد از شرکت‌های تحت کنترل + بودجه پنهان",
+        "en": "True IRGC budget includes official allocation + revenues from controlled companies + off-budget funds"
+      },
+      "confidence": "estimate",
+      "sources": ["fdd_report_irgc", "rand_iran_military", "atlantic_council_iran"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "note": {
+        "fa": "بودجه رسمی ۱۰ میلیارد — اما سپاه هزاران شرکت دارد که سود مستقیم دریافت می‌کند",
+        "en": "Official budget ~$10B — but IRGC controls thousands of companies with direct revenue streams"
+      }
+    },
+    {
+      "id": "irgc_economic_empire",
+      "category": "military",
+      "subcategory": "irgc",
+      "title": {
+        "fa": "امپراتوری اقتصادی سپاه (ارزش دارایی‌ها)",
+        "en": "IRGC Economic Empire (Asset Value)"
+      },
+      "value": 150000000000,
+      "value_min": 100000000000,
+      "value_max": 200000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "سپاه پاسداران بزرگترین امپراتوری اقتصادی ایران است — ساختمان، معدن، انرژی، مخابرات، حمل‌ونقل",
+        "en": "IRGC is Iran's largest economic conglomerate — construction, mining, energy, telecoms, transport"
+      },
+      "confidence": "estimate",
+      "sources": ["rand_report_irgc_economy", "us_treasury_designations", "fdd"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "companies_controlled": "800+",
+      "notable_holdings": [
+        "Khatam al-Anbiya (largest construction firm)",
+        "Mobin Net (telecoms)",
+        "Parts of oil infrastructure"
+      ]
+    },
+    {
+      "id": "hezbollah_annual_funding",
+      "category": "military",
+      "subcategory": "proxy_wars",
+      "title": {
+        "fa": "کمک سالانه به حزب‌الله",
+        "en": "Annual Hezbollah Funding"
+      },
+      "value": 700000000,
+      "value_min": 500000000,
+      "value_max": 1000000000,
+      "unit": "USD_per_year",
+      "display_format": "currency_millions",
+      "direction": "negative",
+      "description": {
+        "fa": "ایران سالانه حدود ۷۰۰ میلیون دلار به حزب‌الله لبنان کمک می‌کند",
+        "en": "Iran provides ~$700M annually to Lebanese Hezbollah"
+      },
+      "confidence": "medium",
+      "sources": ["us_state_dept_annual_report", "unodc", "rand"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "hezbollah_cumulative_20yr",
+      "category": "military",
+      "subcategory": "proxy_wars",
+      "title": {
+        "fa": "کمک تجمعی ۲۰ ساله به حزب‌الله",
+        "en": "20-Year Cumulative Hezbollah Support"
+      },
+      "value": 15000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "مجموع تخمینی کمک‌های ایران به حزب‌الله در ۲۰ سال گذشته",
+        "en": "Estimated total Iranian support to Hezbollah over 20 years"
+      },
+      "confidence": "estimate",
+      "sources": ["own_calculation", "us_state_dept"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "hamas_annual_funding",
+      "category": "military",
+      "subcategory": "proxy_wars",
+      "title": {
+        "fa": "کمک سالانه به حماس",
+        "en": "Annual Hamas Funding"
+      },
+      "value": 100000000,
+      "value_min": 70000000,
+      "value_max": 150000000,
+      "unit": "USD_per_year",
+      "display_format": "currency_millions",
+      "direction": "negative",
+      "description": {
+        "fa": "ایران سالانه حدود ۱۰۰ میلیون دلار به حماس کمک می‌کند",
+        "en": "Iran provides ~$100M annually to Hamas"
+      },
+      "confidence": "medium",
+      "sources": ["fdd_report", "us_state_dept"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "houthi_annual_funding",
+      "category": "military",
+      "subcategory": "proxy_wars",
+      "title": {
+        "fa": "کمک سالانه به حوثی‌ها",
+        "en": "Annual Houthi Funding"
+      },
+      "value": 400000000,
+      "value_min": 300000000,
+      "value_max": 500000000,
+      "unit": "USD_per_year",
+      "display_format": "currency_millions",
+      "direction": "negative",
+      "description": {
+        "fa": "کمک ایران به حوثیان یمن شامل سلاح، آموزش و پول نقد",
+        "en": "Iran's support to Yemen's Houthis includes weapons, training, and cash"
+      },
+      "confidence": "medium",
+      "sources": ["un_panel_experts_yemen", "rand"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "syria_war_total",
+      "category": "military",
+      "subcategory": "proxy_wars",
+      "title": {
+        "fa": "هزینه کل جنگ سوریه برای ایران",
+        "en": "Iran's Total Syria War Expenditure"
+      },
+      "value": 20000000000,
+      "value_min": 15000000000,
+      "value_max": 30000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "تخمین کل هزینه ایران برای حمایت از بشار اسد در جنگ داخلی سوریه (۲۰۱۱-۲۰۲۰)",
+        "en": "Estimated total Iran spent supporting Assad in Syria's civil war (2011–2020)"
+      },
+      "confidence": "estimate",
+      "sources": ["various_estimates", "brookings"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "pmf_iraq_annual",
+      "category": "military",
+      "subcategory": "proxy_wars",
+      "title": {
+        "fa": "کمک سالانه به حشد الشعبی عراق",
+        "en": "Annual PMF (Iraq) Support"
+      },
+      "value": 500000000,
+      "value_min": 300000000,
+      "value_max": 700000000,
+      "unit": "USD_per_year",
+      "display_format": "currency_millions",
+      "direction": "negative",
+      "description": {
+        "fa": "ایران سالانه صدها میلیون دلار به نیروهای حشد الشعبی در عراق می‌دهد",
+        "en": "Iran provides hundreds of millions annually to Iraq's Popular Mobilization Forces"
+      },
+      "confidence": "estimate",
+      "sources": ["rand_iran_proxies", "brookings"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "total_proxy_expenditure",
+      "category": "military",
+      "subcategory": "proxy_wars",
+      "title": {
+        "fa": "کل هزینه جنگ‌های نیابتی (تخمین ۲۰ ساله)",
+        "en": "Total Proxy War Expenditure (20yr Estimate)"
+      },
+      "value": 100000000000,
+      "value_min": 60000000000,
+      "value_max": 150000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "مجموع تخمینی هزینه‌های نیابتی ایران در لبنان، فلسطین، یمن، عراق و سوریه طی ۲۰ سال",
+        "en": "Total estimated Iranian proxy expenditures across Lebanon, Palestine, Yemen, Iraq and Syria over 20 years"
+      },
+      "confidence": "estimate",
+      "sources": ["own_calculation", "multiple_think_tanks"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "comparable_items": [
+        {
+          "label_fa": "۲ بار تمام بودجه سلامت ایران برای ۲۰ سال",
+          "label_en": "2x Iran's entire health budget for 20 years",
+          "value": 100000000000
+        },
+        {
+          "label_fa": "۱۰ بار بودجه علم و پژوهش برای ۲۰ سال",
+          "label_en": "10x Iran's R&D budget for 20 years",
+          "value": 100000000000
+        }
+      ]
+    },
+    {
+      "id": "nuclear_program_cost",
+      "category": "military",
+      "subcategory": "nuclear",
+      "title": {
+        "fa": "هزینه برنامه هسته‌ای (تخمین تجمعی)",
+        "en": "Nuclear Program Cost (Cumulative Estimate)"
+      },
+      "value": 200000000000,
+      "value_min": 100000000000,
+      "value_max": 300000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "تخمین کل هزینه برنامه هسته‌ای از دهه ۱۳۶۰ تاکنون — شامل مستقیم و غیرمستقیم",
+        "en": "Estimated total nuclear program cost since the 1980s — direct costs plus indirect sanctions costs"
+      },
+      "confidence": "estimate",
+      "sources": ["various_estimates"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "note": {
+        "fa": "دامنه این عدد بسیار بزرگ است. هزینه مستقیم کمتر؛ هزینه تحریم‌های ناشی از آن بسیار بیشتر.",
+        "en": "Range is very wide. Direct cost is lower; cost of resulting sanctions is much higher."
+      }
+    },
+    {
+      "id": "iran_iraq_war_cost",
+      "category": "military",
+      "subcategory": "wars",
+      "title": {
+        "fa": "هزینه جنگ ایران و عراق (۱۹۸۰-۱۹۸۸)",
+        "en": "Iran-Iraq War Total Cost (1980–1988)"
+      },
+      "value": 622000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "جنگ ۸ ساله با عراق تخمیناً ۶۲۲ میلیارد دلار به اقتصاد ایران خسارت زد — معادل ۹ سال کل تولید ناخالص داخلی آن زمان",
+        "en": "8-year war with Iraq caused ~$622B in damage to Iran's economy — equivalent to 9 years of Iran's then-GDP"
+      },
+      "confidence": "medium",
+      "sources": ["sipri", "brown_university_costs_of_war"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "human_cost": {
+        "iranian_deaths": "200,000-500,000 soldiers",
+        "civilians_killed": "100,000+",
+        "displaced": "millions"
+      }
+    }
+  ]
+}

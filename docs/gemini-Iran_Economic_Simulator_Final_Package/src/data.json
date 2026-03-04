@@ -1,0 +1,28 @@
+
+{
+  "settings": {
+    "currency_base": "IRR",
+    "usd_rate": 650000,
+    "fiscal_year_start": "2024-03-20T00:00:00Z"
+  },
+  "drain_items": [
+    {
+      "id": "religious_centers",
+      "label": "مرکز خدمات حوزه‌های علمیه",
+      "annual_budget_irr": 9500000000000,
+      "multiplier": 1.5
+    },
+    {
+      "id": "propaganda",
+      "label": "سازمان تبلیغات اسلامی",
+      "annual_budget_irr": 3500000000000,
+      "multiplier": 1.2
+    },
+    {
+      "id": "oil_discount_loss",
+      "label": "ضرر تخفیف نفت به چین (تخمینی)",
+      "annual_budget_irr": 450000000000000,
+      "multiplier": 2.0
+    }
+  ]
+}

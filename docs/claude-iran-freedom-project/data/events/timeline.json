@@ -1,0 +1,174 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-04",
+    "description_fa": "تایم‌لاین رویدادهای کلیدی با اثر اقتصادی و انسانی",
+    "description_en": "Timeline of key events with economic and human impact"
+  },
+  "events": [
+    {
+      "id": "revolution_1979",
+      "date": "1979-02-11",
+      "date_display": {"fa": "۲۲ بهمن ۱۳۵۷", "en": "February 11, 1979"},
+      "title": {"fa": "انقلاب اسلامی", "en": "Islamic Revolution"},
+      "type": "political",
+      "impact_level": "critical",
+      "economic_impact_usd": -200000000000,
+      "description": {
+        "fa": "سقوط پهلوی، فرار سرمایه، ملی‌سازی‌ها، آغاز انزوای بین‌المللی",
+        "en": "Fall of Pahlavi dynasty, capital flight, nationalizations, beginning of international isolation"
+      },
+      "economic_details": {
+        "fa": "GDP بلافاصله ۲۵٪ کاهش یافت. فرار سرمایه عظیم. توقف پروژه‌های در دست احداث.",
+        "en": "GDP immediately fell ~25%. Massive capital flight. Halt to dozens of major infrastructure projects."
+      },
+      "sources": ["world_bank_iran_history", "imf_historical"]
+    },
+    {
+      "id": "iran_iraq_war_start",
+      "date": "1980-09-22",
+      "date_display": {"fa": "۳۱ شهریور ۱۳۵۹", "en": "September 22, 1980"},
+      "title": {"fa": "آغاز جنگ با عراق", "en": "Start of Iran-Iraq War"},
+      "type": "war",
+      "impact_level": "critical",
+      "economic_impact_usd": -622000000000,
+      "human_cost": {
+        "killed_estimate": "300,000+",
+        "wounded_estimate": "500,000+"
+      },
+      "description": {
+        "fa": "۸ سال جنگ ویرانگر که اقتصاد ایران را نابود کرد",
+        "en": "8 years of devastating war that destroyed Iran's economy and a generation of young men"
+      },
+      "end_date": "1988-08-20",
+      "duration_years": 8,
+      "sources": ["sipri", "brown_university_costs_of_war"]
+    },
+    {
+      "id": "political_massacres_1988",
+      "date": "1988-07-19",
+      "date_display": {"fa": "تابستان ۱۳۶۷", "en": "Summer 1988"},
+      "title": {"fa": "کشتار زندانیان سیاسی", "en": "Political Prisoner Massacres"},
+      "type": "human_rights",
+      "impact_level": "critical",
+      "economic_impact_usd": null,
+      "human_cost": {
+        "killed_estimate": "3,000-5,000 political prisoners",
+        "note": "در چند هفته، هزاران زندانی سیاسی اعدام شدند"
+      },
+      "description": {
+        "fa": "خمینی دستور اعدام هزاران زندانی سیاسی را صادر کرد",
+        "en": "Khomeini ordered the execution of thousands of political prisoners in a matter of weeks"
+      },
+      "sources": ["amnesty_international", "human_rights_watch", "un_report_iran"]
+    },
+    {
+      "id": "first_us_sanctions",
+      "date": "1995-05-01",
+      "date_display": {"fa": "اردیبهشت ۱۳۷۴", "en": "May 1995"},
+      "title": {"fa": "تحریم‌های گسترده آمریکا", "en": "Comprehensive US Sanctions"},
+      "type": "sanctions",
+      "impact_level": "high",
+      "economic_impact_usd": -50000000000,
+      "description": {
+        "fa": "کلینتون تحریم‌های گسترده نفتی و تجاری علیه ایران اعمال کرد",
+        "en": "Clinton imposed comprehensive oil and trade sanctions against Iran"
+      },
+      "sources": ["us_ofac", "state_dept"]
+    },
+    {
+      "id": "jcpoa_2015",
+      "date": "2015-07-14",
+      "date_display": {"fa": "تیر ۱۳۹۴", "en": "July 2015"},
+      "title": {"fa": "توافق برجام", "en": "JCPOA Nuclear Deal"},
+      "type": "diplomacy",
+      "impact_level": "high",
+      "economic_impact_usd": 100000000000,
+      "description": {
+        "fa": "برجام باعث کاهش تحریم‌ها و آزادسازی ۱۰۰+ میلیارد دلار دارایی ایران شد",
+        "en": "JCPOA reduced sanctions and released $100B+ in frozen Iranian assets"
+      },
+      "sources": ["cfr_jcpoa_analysis", "state_dept"]
+    },
+    {
+      "id": "jcpoa_withdrawal_2018",
+      "date": "2018-05-08",
+      "date_display": {"fa": "اردیبهشت ۱۳۹۷", "en": "May 2018"},
+      "title": {"fa": "خروج آمریکا از برجام", "en": "US Withdrawal from JCPOA"},
+      "type": "sanctions",
+      "impact_level": "critical",
+      "economic_impact_usd": -150000000000,
+      "description": {
+        "fa": "ترامپ از برجام خارج شد، تحریم‌های شدیدتر اعمال کرد. ریال ۷۰٪ سقوط کرد.",
+        "en": "Trump withdrew from JCPOA, reimposed maximum pressure sanctions. Rial fell 70%."
+      },
+      "sources": ["cfr_jcpoa_analysis", "world_bank"]
+    },
+    {
+      "id": "protests_november_2019",
+      "date": "2019-11-15",
+      "date_display": {"fa": "آبان ۱۳۹۸", "en": "November 2019"},
+      "title": {"fa": "اعتراضات آبان — قتل‌عام معترضان", "en": "November Protests — Crackdown"},
+      "type": "human_rights",
+      "impact_level": "high",
+      "economic_impact_usd": -1000000000,
+      "human_cost": {
+        "killed_estimate": "~1,500",
+        "arrested_estimate": "7,000+",
+        "note_fa": "سه روز قطع کامل اینترنت"
+      },
+      "description": {
+        "fa": "اعتراضات به گرانی بنزین سرکوب خونین شد. ۱۵۰۰ نفر کشته، اینترنت قطع شد.",
+        "en": "Protests over fuel price hike met with lethal force. ~1500 killed, internet cut for 3 days."
+      },
+      "sources": ["amnesty_international_iran", "reuters", "netblocks"]
+    },
+    {
+      "id": "soleimani_assassination_2020",
+      "date": "2020-01-03",
+      "date_display": {"fa": "دی ۱۳۹۸", "en": "January 2020"},
+      "title": {"fa": "ترور سردار سلیمانی", "en": "Soleimani Assassination"},
+      "type": "military",
+      "impact_level": "high",
+      "economic_impact_usd": -20000000000,
+      "description": {
+        "fa": "آمریکا سلیمانی را کشت. ایران پاسخ داد. بورس تهران سقوط کرد.",
+        "en": "US killed Soleimani. Iran retaliated. Tehran stock market crashed. Tensions spiked."
+      },
+      "sources": ["various_news"]
+    },
+    {
+      "id": "mahsa_amini_zhina_revolution",
+      "date": "2022-09-16",
+      "date_display": {"fa": "شهریور ۱۴۰۱", "en": "September 2022"},
+      "title": {"fa": "انقلاب ژینا — مرگ مهسا امینی", "en": "Zhina Revolution — Mahsa Amini"},
+      "type": "human_rights",
+      "impact_level": "critical",
+      "economic_impact_usd": -30000000000,
+      "human_cost": {
+        "killed_estimate": "500+",
+        "arrested_estimate": "20,000+",
+        "executed": "7+ (officially)"
+      },
+      "description": {
+        "fa": "مرگ مهسا امینی در بازداشت گشت ارشاد، موج اعتراضات بی‌سابقه‌ای را آغاز کرد که ۶ ماه ادامه داشت",
+        "en": "Death of Mahsa (Zhina) Amini in morality police custody sparked unprecedented 6-month uprising"
+      },
+      "sources": ["amnesty_international", "ihr_iran", "human_rights_watch"]
+    },
+    {
+      "id": "iran_israel_direct_2024",
+      "date": "2024-04-13",
+      "date_display": {"fa": "فروردین ۱۴۰۳", "en": "April 2024"},
+      "title": {"fa": "حمله مستقیم ایران به اسرائیل", "en": "Iran Direct Attack on Israel"},
+      "type": "military",
+      "impact_level": "high",
+      "economic_impact_usd": -5000000000,
+      "description": {
+        "fa": "ایران برای اولین بار مستقیماً اسرائیل را با پهپاد و موشک هدف قرار داد — اولین حمله مستقیم در تاریخ",
+        "en": "Iran directly targeted Israel with drones and missiles for first time — escalation marker"
+      },
+      "sources": ["reuters", "bbc", "ap"]
+    }
+  ]
+}

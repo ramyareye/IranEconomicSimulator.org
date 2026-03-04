@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Iran Regime Cost Ticker Demo</title>
+    <style>
+      body {
+        background: #111;
+        color: #fff;
+        font-family: sans-serif;
+      }
+      #ticker {
+        font-size: 4rem;
+        color: #e53e3e;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Iran Regime Economic Waste Ticker</h1>
+    <p id="ticker">$13,000,000,000,000+</p>
+    <p>Since 1979 (approx. cumulative opportunity cost)</p>
+    <p>Future if regime ends: GDP +82% to +389% (wiiw 2026)</p>
+
+    <script>
+      let amount = 13000000000000;
+      const rate = 4500; // $ per second rough
+      setInterval(() => {
+        amount += rate;
+        document.getElementById("ticker").textContent =
+          "$" + amount.toLocaleString();
+      }, 1000);
+    </script>
+  </body>
+</html>

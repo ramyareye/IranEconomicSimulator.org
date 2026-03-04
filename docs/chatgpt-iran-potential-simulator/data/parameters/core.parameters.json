@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "version": "0.1.0",
+    "baseline_year": 2024,
+    "currency": "USD",
+    "notes": "Seed values are placeholders. Replace with sourced values before public claims."
+  },
+  "parameters": {
+    "g_base": {
+      "value": 0.015,
+      "min": 0.005,
+      "max": 0.025,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder baseline growth for a middle-income economy; replace with peer-based estimate.",
+      "last_updated": "2026-03-03"
+    },
+    "g_trade": {
+      "value": 0.01,
+      "min": 0.0,
+      "max": 0.03,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder for normalized trade/finance access impact; calibrate from peer/sanctions literature.",
+      "last_updated": "2026-03-03"
+    },
+    "g_governance": {
+      "value": 0.01,
+      "min": 0.0,
+      "max": 0.03,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder for governance/anti-corruption reforms raising productivity.",
+      "last_updated": "2026-03-03"
+    },
+    "g_competition": {
+      "value": 0.007,
+      "min": 0.0,
+      "max": 0.02,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder for reducing monopolies / improving competition.",
+      "last_updated": "2026-03-03"
+    },
+    "g_capital": {
+      "value": 0.008,
+      "min": 0.0,
+      "max": 0.025,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder for capital return + lower risk premium effect on investment.",
+      "last_updated": "2026-03-03"
+    },
+    "g_talent": {
+      "value": 0.006,
+      "min": 0.0,
+      "max": 0.02,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder for brain gain / talent return.",
+      "last_updated": "2026-03-03"
+    },
+    "g_oil": {
+      "value": 0.004,
+      "min": -0.005,
+      "max": 0.015,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder for oil/gas capacity & export normalization; should be constrained by volumes/prices.",
+      "last_updated": "2026-03-03"
+    },
+    "gdp_baseline": {
+      "value": 400000000000,
+      "min": 300000000000,
+      "max": 550000000000,
+      "unit": "USD",
+      "confidence": "low",
+      "method_note": "Placeholder nominal GDP; replace with World Bank/IMF baseline year.",
+      "last_updated": "2026-03-03"
+    },
+    "population_baseline": {
+      "value": 85000000,
+      "min": 83000000,
+      "max": 90000000,
+      "unit": "people",
+      "confidence": "medium",
+      "method_note": "Rough baseline population; replace with UN/World Bank.",
+      "last_updated": "2026-03-03"
+    },
+    "population_growth": {
+      "value": 0.01,
+      "min": 0.003,
+      "max": 0.015,
+      "unit": "fraction_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder; replace with UN projections.",
+      "last_updated": "2026-03-03"
+    },
+    "tax_to_gdp": {
+      "value": 0.12,
+      "min": 0.08,
+      "max": 0.2,
+      "unit": "fraction_of_gdp",
+      "confidence": "low",
+      "method_note": "Placeholder; calibrate vs peer countries and Iran-specific fiscal data.",
+      "last_updated": "2026-03-03"
+    },
+    "oil_revenue": {
+      "value": 60000000000,
+      "min": 20000000000,
+      "max": 120000000000,
+      "unit": "USD_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder; later compute from volume * price * gov_take.",
+      "last_updated": "2026-03-03"
+    },
+    "customs_revenue": {
+      "value": 8000000000,
+      "min": 2000000000,
+      "max": 20000000000,
+      "unit": "USD_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder.",
+      "last_updated": "2026-03-03"
+    },
+    "soe_dividends": {
+      "value": 5000000000,
+      "min": 0,
+      "max": 20000000000,
+      "unit": "USD_per_year",
+      "confidence": "low",
+      "method_note": "Placeholder.",
+      "last_updated": "2026-03-03"
+    },
+    "leakage_rate": {
+      "value": 0.2,
+      "min": 0.05,
+      "max": 0.4,
+      "unit": "fraction_of_revenue",
+      "confidence": "low",
+      "method_note": "Proxy for rent-seeking/corruption/inefficiency; replace with defensible proxy + ranges.",
+      "last_updated": "2026-03-03"
+    }
+  }
+}

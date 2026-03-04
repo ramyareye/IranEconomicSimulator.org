@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IPS Output Bundle",
+  "type": "object",
+  "required": [
+    "meta",
+    "scenario",
+    "kind",
+    "results"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "generated_at",
+        "model_version",
+        "data_version",
+        "baseline_year"
+      ],
+      "properties": {
+        "generated_at": {
+          "type": "string"
+        },
+        "model_version": {
+          "type": "string"
+        },
+        "data_version": {
+          "type": "string"
+        },
+        "baseline_year": {
+          "type": "integer"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "scenario": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string",
+      "enum": [
+        "point",
+        "montecarlo",
+        "sensitivity"
+      ]
+    },
+    "results": {
+      "type": "object"
+    }
+  }
+}

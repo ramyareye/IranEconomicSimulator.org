@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IPS Parameter Set",
+  "type": "object",
+  "required": [
+    "meta",
+    "parameters"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "version",
+        "baseline_year",
+        "currency"
+      ],
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "baseline_year": {
+          "type": "integer"
+        },
+        "currency": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      }
+    },
+    "parameters": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "value",
+          "min",
+          "max",
+          "unit",
+          "confidence",
+          "last_updated"
+        ],
+        "properties": {
+          "value": {
+            "type": "number"
+          },
+          "min": {
+            "type": "number"
+          },
+          "max": {
+            "type": "number"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "method_note": {
+            "type": "string"
+          },
+          "last_updated": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

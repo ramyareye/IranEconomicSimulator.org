@@ -1,0 +1,11 @@
+{
+  "currency": "USD",
+  "cases": [
+    {
+      "name": "Debsh Tea Scandal",
+      "amount": 3700000000,
+      "year": 2023,
+      "impact_equivalent": "Could have built 500 state-of-the-art hospitals."
+    }
+  ]
+}

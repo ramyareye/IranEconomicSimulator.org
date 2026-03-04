@@ -1,0 +1,45 @@
+name: Daily Data Snapshot
+
+on:
+  schedule:
+    # Run every day at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install node-fetch
+      
+      - name: Fetch live data and create snapshot
+        run: |
+          node scripts/fetch_live_data.js
+        env:
+          ALPHA_VANTAGE_KEY: ${{ secrets.ALPHA_VANTAGE_KEY }}
+      
+      - name: Validate all data files
+        run: node scripts/validate.js
+      
+      - name: Commit snapshot if changed
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          DATE=$(date +%Y-%m-%d)
+          git add data/live/snapshots/
+          git diff --cached --quiet || git commit -m "chore: daily snapshot $DATE [skip ci]"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

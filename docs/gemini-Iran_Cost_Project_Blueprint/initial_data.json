@@ -1,0 +1,31 @@
+{
+  "categories": [
+    {
+      "id": "ideological_spending",
+      "title_fa": "بودجه نهادهای ایدئولوژیک",
+      "title_en": "Ideological & Propaganda Budget",
+      "metrics": [
+        {
+          "name": "Religious Institutions",
+          "annual_cost_irr": 450000000000000,
+          "source": "Budget Law 1403",
+          "description": "Total budget for 25+ non-productive religious entities."
+        }
+      ]
+    },
+    {
+      "id": "corruption",
+      "title_fa": "فساد و اختلاس",
+      "title_en": "Corruption & Embezzlement",
+      "total_documented_usd": 120000000000,
+      "notable_cases": [
+        {"name": "Debsh Tea", "amount_usd": 3700000000},
+        {"name": "Steel Corruption", "amount_usd": 3000000000}
+      ]
+    }
+  ],
+  "global_metrics": {
+    "rial_to_usd_rate": 650000,
+    "last_updated": "2026-03-04"
+  }
+}

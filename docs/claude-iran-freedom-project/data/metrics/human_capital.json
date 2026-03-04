@@ -1,0 +1,297 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "last_updated": "2026-03-04",
+    "description_fa": "شاخص‌های سرمایه انسانی، فرار مغزها، آموزش و حقوق زنان",
+    "description_en": "Human capital indicators: brain drain, education, women's rights"
+  },
+  "metrics": [
+    {
+      "id": "brain_drain_rank",
+      "category": "human_capital",
+      "subcategory": "brain_drain",
+      "title": {
+        "fa": "رتبه فرار مغزها در جهان",
+        "en": "Brain Drain Global Rank"
+      },
+      "value": 1,
+      "unit": "rank",
+      "display_format": "rank",
+      "direction": "negative",
+      "description": {
+        "fa": "ایران طی سال‌های متمادی رتبه اول فرار مغزها را در جهان دارد",
+        "en": "Iran has consistently ranked #1 globally for brain drain for over two decades"
+      },
+      "confidence": "high",
+      "sources": ["imf_brain_drain_report_2006", "world_bank_migration_data"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "note": {
+        "fa": "IMF در گزارش ۲۰۰۶ ایران را رتبه اول معرفی کرد. از آن زمان تغییری نکرده.",
+        "en": "IMF's 2006 report ranked Iran #1. The situation has not improved since."
+      }
+    },
+    {
+      "id": "total_diaspora",
+      "category": "human_capital",
+      "subcategory": "brain_drain",
+      "title": {
+        "fa": "کل دیاسپورای ایرانی",
+        "en": "Total Iranian Diaspora"
+      },
+      "value": 6000000,
+      "value_min": 5000000,
+      "value_max": 8000000,
+      "unit": "people",
+      "display_format": "number",
+      "direction": "negative",
+      "description": {
+        "fa": "تخمین کل ایرانیانی که خارج از کشور زندگی می‌کنند",
+        "en": "Estimated total Iranians living outside the country"
+      },
+      "confidence": "medium",
+      "sources": ["unhcr_2024", "un_migration_report"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "annual_emigration",
+      "category": "human_capital",
+      "subcategory": "brain_drain",
+      "title": {
+        "fa": "مهاجرت سالانه (اخیر)",
+        "en": "Annual Emigration (Recent Years)"
+      },
+      "value": 150000,
+      "value_min": 120000,
+      "value_max": 200000,
+      "unit": "people_per_year",
+      "display_format": "number",
+      "direction": "negative",
+      "description": {
+        "fa": "حدود ۱۵۰ هزار نفر در سال کشور را ترک می‌کنند — اکثراً تحصیل‌کرده",
+        "en": "~150,000 people leave per year — mostly educated professionals"
+      },
+      "confidence": "medium",
+      "sources": ["iran_statistical_center", "various_media"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "human_capital_loss_annual",
+      "category": "human_capital",
+      "subcategory": "brain_drain",
+      "title": {
+        "fa": "ارزش سرمایه انسانی از دست رفته (سالانه)",
+        "en": "Annual Human Capital Loss Value"
+      },
+      "value": 7500000000,
+      "value_min": 5000000000,
+      "value_max": 15000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "ارزش سرمایه‌گذاری دولت در آموزش افرادی که مهاجرت می‌کنند",
+        "en": "Value of state education investment embodied in emigrating professionals"
+      },
+      "confidence": "estimate",
+      "methodology_note": {
+        "fa": "محاسبه: تعداد مهاجرین تحصیل‌کرده × میانگین هزینه آموزش دولت برای هر نفر. هزینه دولت برای هر فارغ‌التحصیل دانشگاهی تخمین ~۵۰،۰۰۰ دلار",
+        "en": "Calculation: number of educated emigrants × average state education cost per person. State cost per university graduate estimated at ~$50,000"
+      },
+      "sources": ["own_calculation", "world_bank_education_expenditure"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "diaspora_wealth_estimate",
+      "category": "human_capital",
+      "subcategory": "brain_drain",
+      "title": {
+        "fa": "ثروت تجمعی دیاسپورای ایرانی",
+        "en": "Estimated Iranian Diaspora Wealth"
+      },
+      "value": 1300000000000,
+      "value_min": 800000000000,
+      "value_max": 2000000000000,
+      "unit": "USD",
+      "display_format": "currency_trillions",
+      "direction": "negative",
+      "description": {
+        "fa": "تخمین ثروتی که ایرانیان در خارج از کشور ساخته‌اند — که می‌توانست در ایران باشد",
+        "en": "Estimated wealth built by Iranians abroad — which could have been created in Iran"
+      },
+      "confidence": "estimate",
+      "sources": ["various_estimates"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "note": {
+        "fa": "این عدد بسیار غیردقیق است — برای نشان دادن مقیاس، نه عدد دقیق",
+        "en": "This figure is highly approximate — illustrative of scale, not precise"
+      }
+    },
+    {
+      "id": "gender_gap_rank",
+      "category": "human_capital",
+      "subcategory": "women",
+      "title": {
+        "fa": "رتبه شکاف جنسیتی — WEF",
+        "en": "Gender Gap Index Rank — WEF"
+      },
+      "value": 143,
+      "value_total": 146,
+      "unit": "rank",
+      "display_format": "rank_of_total",
+      "direction": "negative",
+      "description": {
+        "fa": "ایران رتبه ۱۴۳ از ۱۴۶ کشور در شاخص شکاف جنسیتی دارد",
+        "en": "Iran ranks 143rd out of 146 countries in the WEF Gender Gap Index"
+      },
+      "confidence": "high",
+      "sources": ["wef_global_gender_gap_2024"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "female_labor_participation",
+      "category": "human_capital",
+      "subcategory": "women",
+      "title": {
+        "fa": "مشارکت زنان در بازار کار",
+        "en": "Female Labor Force Participation"
+      },
+      "value": 16,
+      "unit": "percent",
+      "display_format": "percentage",
+      "direction": "negative",
+      "description": {
+        "fa": "فقط ۱۶٪ زنان ایران در بازار کار رسمی هستند — در مقایسه با ۵۵٪ OECD",
+        "en": "Only 16% of Iranian women participate in formal labor market — vs 55% OECD avg"
+      },
+      "confidence": "high",
+      "sources": ["ilo_stat_2024", "world_bank_gender_data"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "comparable": {
+        "oecd_average": 55,
+        "turkey": 34,
+        "uae": 28
+      }
+    },
+    {
+      "id": "gdp_loss_gender_exclusion",
+      "category": "human_capital",
+      "subcategory": "women",
+      "title": {
+        "fa": "زیان GDP از حذف زنان از اقتصاد",
+        "en": "GDP Loss from Female Economic Exclusion"
+      },
+      "value": 150000000000,
+      "unit": "USD_per_year",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "طبق مدل IMF، اگر مشارکت زنان ایران به سطح ترکیه برسد، GDP سالانه ۱۵۰ میلیارد دلار بالا می‌رود",
+        "en": "Per IMF modeling, if Iran's female participation reached Turkey's level, annual GDP would rise ~$150B"
+      },
+      "confidence": "estimate",
+      "sources": ["imf_gender_equality_growth", "own_calculation"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "youth_unemployment",
+      "category": "human_capital",
+      "subcategory": "employment",
+      "title": {
+        "fa": "بیکاری جوانان (رسمی)",
+        "en": "Youth Unemployment Rate (Official)"
+      },
+      "value": 27,
+      "value_min": 27,
+      "value_max": 45,
+      "unit": "percent",
+      "display_format": "percentage",
+      "direction": "negative",
+      "description": {
+        "fa": "نرخ رسمی بیکاری جوانان ۲۷٪ — احتمالاً بالای ۴۰٪ در واقعیت",
+        "en": "Official youth unemployment 27% — real figure likely above 40%"
+      },
+      "confidence": "medium",
+      "sources": ["ilo_stat_2024", "iran_statistical_center"],
+      "last_updated": "2024-01-01",
+      "is_live": false,
+      "note": {
+        "fa": "نرخ رسمی کسانی را که دست از جست‌وجوی کار برداشته‌اند نمی‌شمارد",
+        "en": "Official rate excludes discouraged workers who have stopped searching"
+      }
+    },
+    {
+      "id": "press_freedom_rank",
+      "category": "human_capital",
+      "subcategory": "civil_liberties",
+      "title": {
+        "fa": "رتبه آزادی مطبوعات",
+        "en": "Press Freedom Rank"
+      },
+      "value": 176,
+      "value_total": 180,
+      "unit": "rank",
+      "display_format": "rank_of_total",
+      "direction": "negative",
+      "description": {
+        "fa": "ایران رتبه ۱۷۶ از ۱۸۰ کشور در آزادی مطبوعات دارد",
+        "en": "Iran ranks 176th out of 180 countries in press freedom"
+      },
+      "confidence": "high",
+      "sources": ["rsf_press_freedom_index_2024"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "internet_freedom",
+      "category": "human_capital",
+      "subcategory": "civil_liberties",
+      "title": {
+        "fa": "آزادی اینترنت",
+        "en": "Internet Freedom Status"
+      },
+      "value": "Not Free",
+      "unit": "categorical",
+      "display_format": "status",
+      "direction": "negative",
+      "description": {
+        "fa": "ایران در رده 'اینترنت آزاد نیست' — VPN تقریباً اجباری است",
+        "en": "Iran classified as 'Not Free' — VPN usage is practically mandatory"
+      },
+      "score": 16,
+      "score_max": 100,
+      "confidence": "high",
+      "sources": ["freedom_house_net_freedom_2024"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    },
+    {
+      "id": "internet_shutdown_cost_2019",
+      "category": "human_capital",
+      "subcategory": "civil_liberties",
+      "title": {
+        "fa": "هزینه قطع اینترنت آبان ۱۳۹۸",
+        "en": "Cost of November 2019 Internet Shutdown"
+      },
+      "value": 1000000000,
+      "unit": "USD",
+      "display_format": "currency_billions",
+      "direction": "negative",
+      "description": {
+        "fa": "قطع ۳ روزه اینترنت در آبان ۱۳۹۸ حدود یک میلیارد دلار به اقتصاد ایران زد",
+        "en": "3-day internet shutdown during November 2019 protests cost Iran's economy ~$1 billion"
+      },
+      "confidence": "medium",
+      "sources": ["netblocks_report_2019"],
+      "last_updated": "2024-01-01",
+      "is_live": false
+    }
+  ]
+}

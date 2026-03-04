@@ -1,0 +1,9 @@
+{
+  "id": "base",
+  "name": "Base",
+  "description": "Middle path with moderate improvements and partial normalization.",
+  "overrides": {
+    "leakage_rate": 0.2,
+    "tax_to_gdp": 0.12
+  }
+}

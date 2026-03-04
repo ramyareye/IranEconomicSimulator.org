@@ -1,0 +1,17 @@
+{
+  "name": "iran-potential-simulator",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sim:base": "tsx model/simulate.ts data/scenarios/base.json out/base.results.json",
+    "sim:opt": "tsx model/simulate.ts data/scenarios/optimistic.json out/optimistic.results.json",
+    "mc:base": "tsx model/montecarlo.ts data/scenarios/base.json out/base.montecarlo.json",
+    "mc:opt": "tsx model/montecarlo.ts data/scenarios/optimistic.json out/optimistic.montecarlo.json",
+    "sens:base": "tsx model/sensitivity.ts data/scenarios/base.json out/base.sensitivity.json",
+    "sens:opt": "tsx model/sensitivity.ts data/scenarios/optimistic.json out/optimistic.sensitivity.json"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "^5.6.3"
+  }
+}

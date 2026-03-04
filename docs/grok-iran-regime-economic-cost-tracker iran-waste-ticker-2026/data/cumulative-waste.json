@@ -1,0 +1,15 @@
+{
+  "asOf": "2026-03",
+  "totalUSD": 13000000000000,
+  "note": "Approximate cumulative opportunity cost since 1979 (10-15T range from sources)",
+  "breakdown": {
+    "revolutionWar1978-1988": 34660.0,
+    "perCapitaLoss1978-1988": 34660,
+    "notePerCapita": "Farzanegan 2022 synthetic control - accumulated per person",
+    "proxiesAxisResistance": 450000000000,
+    "sanctionsOilLost": 1200000000000,
+    "nuclearProgram": 500000000000,
+    "majorCorruption": 200000000000,
+    "otherMismanagement": 5000000000000
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "optimistic",
+  "name": "Optimistic",
+  "description": "Stronger reforms, competition, talent/capital return, lower leakage and higher tax capacity.",
+  "overrides": {
+    "g_trade": 0.02,
+    "g_governance": 0.02,
+    "g_competition": 0.012,
+    "g_capital": 0.015,
+    "g_talent": 0.01,
+    "leakage_rate": 0.1,
+    "tax_to_gdp": 0.16,
+    "oil_revenue": 90000000000
+  }
+}

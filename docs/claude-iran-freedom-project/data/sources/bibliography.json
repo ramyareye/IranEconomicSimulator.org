@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "description": "Bibliography of all sources used in the Iran Freedom project data",
+    "last_updated": "2026-03-04"
+  },
+  "sources": {
+    "imf_weo_2024": {
+      "name": "IMF World Economic Outlook Database 2024",
+      "url": "https://www.imf.org/en/Publications/WEO",
+      "type": "official_international",
+      "reliability": "high",
+      "description": "IMF's semi-annual economic database covering 190+ countries"
+    },
+    "world_bank_api_2024": {
+      "name": "World Bank Open Data",
+      "url": "https://data.worldbank.org/country/iran-islamic-rep",
+      "type": "official_international",
+      "reliability": "high",
+      "description": "World Bank's open data portal with historical economic indicators"
+    },
+    "world_bank_historical": {
+      "name": "World Bank Historical Data (Penn World Tables via WB)",
+      "url": "https://data.worldbank.org",
+      "type": "official_international",
+      "reliability": "medium",
+      "description": "Historical GDP data; pre-1980 Iran data carries uncertainty"
+    },
+    "columbia_sipa_sanctions_study": {
+      "name": "Columbia SIPA Sanctions and the Iranian Economy",
+      "url": "https://sipa.columbia.edu",
+      "type": "academic",
+      "reliability": "high",
+      "description": "Academic analysis of economic impact of sanctions on Iran"
+    },
+    "rand_iran_military": {
+      "name": "RAND Corporation — Iran's Military",
+      "url": "https://www.rand.org/topics/iran.html",
+      "type": "think_tank",
+      "reliability": "high",
+      "description": "RAND's research on Iranian military capabilities and spending"
+    },
+    "atlantic_council_iran": {
+      "name": "Atlantic Council IranSource",
+      "url": "https://www.atlanticcouncil.org/programs/middle-east-programs/iran-in-focus/",
+      "type": "think_tank",
+      "reliability": "medium",
+      "description": "Policy-oriented analysis of Iran; some political bias, note accordingly"
+    },
+    "fdd_report_irgc": {
+      "name": "Foundation for Defense of Democracies — IRGC Reports",
+      "url": "https://www.fdd.org/topics/iran/",
+      "type": "think_tank",
+      "reliability": "medium",
+      "bias_note": "FDD leans hawkish on Iran; cross-reference with other sources",
+      "description": "Detailed IRGC economic and military analysis"
+    },
+    "amnesty_international": {
+      "name": "Amnesty International — Iran",
+      "url": "https://www.amnesty.org/en/location/middle-east-and-north-africa/iran/",
+      "type": "civil_society",
+      "reliability": "high",
+      "description": "Human rights documentation and reporting"
+    },
+    "ihr_iran": {
+      "name": "Iran Human Rights (IHR)",
+      "url": "https://iranhr.net",
+      "type": "civil_society",
+      "reliability": "high",
+      "description": "Iran-focused human rights monitoring organization based in Oslo"
+    },
+    "rsf_press_freedom_index_2024": {
+      "name": "Reporters Without Borders — Press Freedom Index 2024",
+      "url": "https://rsf.org/en/index",
+      "type": "civil_society",
+      "reliability": "high",
+      "description": "Annual global press freedom ranking"
+    },
+    "freedom_house_net_freedom_2024": {
+      "name": "Freedom House — Freedom on the Net 2024",
+      "url": "https://freedomhouse.org/report/freedom-net",
+      "type": "civil_society",
+      "reliability": "high",
+      "description": "Annual internet freedom country reports"
+    },
+    "wef_global_gender_gap_2024": {
+      "name": "World Economic Forum — Global Gender Gap Report 2024",
+      "url": "https://www.weforum.org/publications/global-gender-gap-report-2024/",
+      "type": "official_international",
+      "reliability": "high",
+      "description": "Annual gender gap index covering 146 countries"
+    },
+    "ilo_stat_2024": {
+      "name": "ILO Statistics — ILOSTAT",
+      "url": "https://ilostat.ilo.org/data/",
+      "type": "official_international",
+      "reliability": "high",
+      "description": "International Labour Organization labor statistics"
+    },
+    "unctad_wir_2024": {
+      "name": "UNCTAD World Investment Report 2024",
+      "url": "https://unctad.org/wir",
+      "type": "official_international",
+      "reliability": "high",
+      "description": "Annual FDI data and analysis"
+    },
+    "sipri": {
+      "name": "SIPRI Military Expenditure Database",
+      "url": "https://www.sipri.org/databases/milex",
+      "type": "research",
+      "reliability": "high",
+      "description": "Stockholm International Peace Research Institute military spending data"
+    },
+    "brown_university_costs_of_war": {
+      "name": "Brown University Costs of War Project",
+      "url": "https://watson.brown.edu/costsofwar/",
+      "type": "academic",
+      "reliability": "high",
+      "description": "Comprehensive accounting of war costs — human and financial"
+    },
+    "netblocks_report_2019": {
+      "name": "NetBlocks — Iran Internet Shutdown Report Nov 2019",
+      "url": "https://netblocks.org",
+      "type": "civil_society",
+      "reliability": "high",
+      "description": "Internet shutdown monitoring and economic cost analysis"
+    },
+    "us_ofac": {
+      "name": "US OFAC Iran Sanctions List",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
+      "type": "government",
+      "reliability": "high",
+      "description": "Official US Treasury sanctions designations"
+    },
+    "bonbast_com": {
+      "name": "Bonbast.com — Iran Open Market Exchange Rates",
+      "url": "https://bonbast.com",
+      "type": "market_data",
+      "reliability": "medium",
+      "description": "Unofficial but widely-used source for Iran's open market exchange rates. CBI official rate is lower and not market-reflective.",
+      "note": "Always disclaim this is open/unofficial market rate, not official CBI rate"
+    },
+    "eia_iran_data": {
+      "name": "US Energy Information Administration — Iran",
+      "url": "https://www.eia.gov/international/analysis/country/IRN",
+      "type": "government",
+      "reliability": "high",
+      "description": "Iran energy sector data and analysis"
+    },
+    "un_panel_experts_yemen": {
+      "name": "UN Panel of Experts on Yemen",
+      "url": "https://www.un.org/sc/suborg/en/sanctions/2140/panel-experts-and-final-reports",
+      "type": "official_international",
+      "reliability": "high",
+      "description": "UN reports documenting Iranian support for Houthis"
+    },
+    "imf_brain_drain_report_2006": {
+      "name": "IMF — Brain Drain: Emigration and Returns (2006)",
+      "url": "https://www.imf.org/external/pubs/ft/fandd/2006/09/pdf/ratha.pdf",
+      "type": "official_international",
+      "reliability": "high",
+      "description": "IMF study naming Iran as #1 in brain drain globally"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "conservative",
+  "name": "Conservative",
+  "description": "Lower reform impact, modest trade normalization, higher leakage.",
+  "overrides": {
+    "g_trade": 0.003,
+    "g_governance": 0.004,
+    "g_competition": 0.002,
+    "g_capital": 0.002,
+    "g_talent": 0.001,
+    "leakage_rate": 0.3,
+    "tax_to_gdp": 0.1
+  }
+}

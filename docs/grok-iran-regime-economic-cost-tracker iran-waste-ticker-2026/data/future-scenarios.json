@@ -1,0 +1,21 @@
+{
+  "scenarios": [
+    {
+      "name": "Sanctions Lift Only",
+      "gdpIncreasePercent": 82,
+      "description": "Long-term GDP growth from removing EU/US sanctions (wiiw 2026)",
+      "euGainPercent": 0.3,
+      "austriaGainPercent": 0.5
+    },
+    {
+      "name": "Productivity Catch-up Turkey Level",
+      "gdpIncreasePercent": 240,
+      "description": "Sanctions lift + productivity to Turkey levels"
+    },
+    {
+      "name": "Productivity Catch-up South Korea Level",
+      "gdpIncreasePercent": 389,
+      "description": "Sanctions lift + productivity to S. Korea levels (wiiw 2026)"
+    }
+  ]
+}
