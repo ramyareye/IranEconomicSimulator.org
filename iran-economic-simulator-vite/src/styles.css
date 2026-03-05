@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Vazirmatn:wght@500;600;700;800&display=swap');
 
 :root {
   --slate-50: #f8fafc;
@@ -63,11 +63,11 @@ a {
 .top-strip__inner {
   width: min(1120px, calc(100% - 2rem));
   margin: 0 auto;
-  padding: 0.9rem 0;
+  padding: 0.72rem 0;
   text-align: center;
   font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.2em;
+  font-size: 0.74rem;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
@@ -109,7 +109,7 @@ a {
 }
 
 .hero {
-  padding: 1.35rem 1.35rem 1.55rem;
+  padding: 1.1rem 1.1rem 1.2rem;
   text-align: center;
 }
 
@@ -118,22 +118,22 @@ a {
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1rem;
 }
 
 .hero-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  gap: 0.55rem;
 }
 
-.lang-pill,
 .hero-nav a,
 .hero-links a,
+.lang-switch__button,
 .action-row button,
 .footer-cta a {
-  padding: 0.82rem 1rem;
+  padding: 0.74rem 0.96rem;
   border-radius: 999px;
   border: 1px solid var(--line-strong);
   background: rgba(255, 255, 255, 0.78);
@@ -145,8 +145,35 @@ a {
     box-shadow 160ms ease;
 }
 
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.24rem;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.76);
+}
+
+.lang-switch__button {
+  cursor: pointer;
+}
+
+.lang-switch__button.is-active {
+  border-color: rgba(244, 63, 94, 0.24);
+  background: rgba(244, 63, 94, 0.08);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.06);
+}
+
+.lang-switch__button--fa {
+  font-family: 'Vazirmatn', sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
 .hero-nav a:hover,
 .hero-links a:hover,
+.lang-switch__button:hover,
 .action-row button:hover,
 .footer-cta a:hover {
   transform: translateY(-1px);
@@ -154,7 +181,6 @@ a {
   box-shadow: 0 12px 22px rgba(15, 23, 42, 0.06);
 }
 
-.lang-pill,
 .mono-overline,
 .section-kicker,
 .section-heading,
@@ -198,7 +224,7 @@ a {
   font-size: 0.8rem;
 }
 
-.hero h1,
+.hero-title,
 .main-counter h2,
 .proof-card h3,
 .trust-card h3,
@@ -210,11 +236,92 @@ a {
   line-height: 1.05;
 }
 
-.hero h1 {
-  margin: 1rem auto 0.8rem;
-  max-width: 11ch;
-  font-size: clamp(3rem, 7vw, 5.3rem);
-  line-height: 0.95;
+.hero-title {
+  margin: 0.8rem 0 0.55rem;
+  max-width: 7.5ch;
+  font-size: clamp(2.8rem, 5.6vw, 4.8rem);
+  line-height: 0.92;
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(20rem, 0.88fr);
+  gap: 1rem;
+  text-align: left;
+}
+
+.hero-copy-panel,
+.hero-side-panel {
+  padding: 1.2rem 1.28rem;
+  border-radius: 1.35rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.hero-copy-panel .mono-overline {
+  color: var(--slate-500);
+}
+
+.hero-copy-panel .hero-subtitle {
+  max-width: none;
+}
+
+.hero-copy-panel .hero-links {
+  justify-content: flex-start;
+}
+
+.hero-side-panel {
+  background:
+    radial-gradient(circle at top left, rgba(244, 63, 94, 0.1), transparent 18rem),
+    linear-gradient(180deg, rgba(255, 247, 237, 0.88), rgba(255, 255, 255, 0.88));
+}
+
+.hero-side-title {
+  margin: 0.55rem 0 0.45rem;
+  font-family: 'Fraunces', serif;
+  font-size: clamp(1.5rem, 2.8vw, 2.2rem);
+  line-height: 1.08;
+}
+
+.hero-side-body {
+  margin: 0;
+  color: var(--slate-600);
+  line-height: 1.72;
+}
+
+.hero-side-points {
+  display: grid;
+  gap: 0.65rem;
+  margin-top: 1rem;
+}
+
+.hero-side-point {
+  display: block;
+  padding: 0.8rem 0.9rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--slate-700);
+  line-height: 1.7;
+}
+
+.hero-source-box {
+  margin-top: 1rem;
+}
+
+.hero-source-box label {
+  display: block;
+  color: var(--slate-500);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.hero-source-box p {
+  margin: 0.45rem 0 0;
+  color: var(--slate-700);
+  line-height: 1.72;
 }
 
 .hero-subtitle,
@@ -230,37 +337,17 @@ a {
 }
 
 .hero-subtitle {
-  max-width: 50rem;
-  margin: 0 auto;
-  font-size: clamp(1.04rem, 2.2vw, 1.22rem);
+  max-width: 34rem;
+  margin: 0;
+  font-size: clamp(1rem, 1.8vw, 1.14rem);
 }
 
 .hero-links {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 0.8rem;
-  margin-top: 1.35rem;
-}
-
-.hero-banner {
-  display: inline-flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1.6rem;
-  padding: 1rem 1.15rem;
-  border-radius: 1rem;
-  border: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.72);
-  font-family: 'IBM Plex Mono', monospace;
-  font-size: 0.8rem;
-  letter-spacing: 0.13em;
-  text-transform: uppercase;
-}
-
-.hero-banner span {
-  color: var(--slate-900);
+  gap: 0.7rem;
+  margin-top: 1.1rem;
 }
 
 .hero-disclaimer {
@@ -268,7 +355,7 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.65rem;
-  margin-top: 1.3rem;
+  margin-top: 1rem;
 }
 
 .hero-disclaimer span {
@@ -468,6 +555,13 @@ a {
   font-size: 0.9rem;
 }
 
+.section-copy {
+  max-width: 52rem;
+  margin: 0 0 1rem;
+  color: var(--slate-600);
+  line-height: 1.72;
+}
+
 .proof-card h3,
 .trust-card h3,
 .impact-card h3,
@@ -510,6 +604,89 @@ a {
 .sources-card,
 .footer-cta {
   padding: 1.25rem 1.3rem;
+}
+
+.metric-table {
+  display: grid;
+  gap: 0;
+}
+
+.metric-row {
+  display: grid;
+  grid-template-columns: 1.9fr 0.9fr 0.8fr 0.8fr 1.25fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.16);
+}
+
+.metric-row--head {
+  padding-top: 0;
+  border-top: 0;
+  color: var(--slate-500);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.metric-main {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.metric-main strong,
+.metric-value {
+  color: var(--slate-900);
+}
+
+.metric-main strong {
+  font-size: 1rem;
+}
+
+.metric-note,
+.metric-source,
+.metric-meta {
+  color: var(--slate-600);
+}
+
+.metric-note {
+  margin: 0;
+  line-height: 1.55;
+}
+
+.metric-value {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.96rem;
+}
+
+.metric-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.metric-claim,
+.metric-source {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.metric-source {
+  justify-items: start;
+  font-size: 0.88rem;
+}
+
+.metric-source a,
+.source-link {
+  color: var(--rose-700);
+  text-decoration: none;
+}
+
+.metric-source a:hover,
+.source-link:hover {
+  text-decoration: underline;
 }
 
 .ledger-table {
@@ -577,6 +754,18 @@ a {
   font-size: 1rem;
 }
 
+.source-link {
+  width: fit-content;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.source-link--static {
+  color: var(--slate-500);
+}
+
 .source-meta {
   display: grid;
   justify-items: end;
@@ -632,10 +821,108 @@ a {
   margin-top: 0.7rem;
 }
 
+.page-shell--fa {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.page-shell--fa .hero-topline {
+  flex-direction: row-reverse;
+}
+
+.page-shell--fa .hero-nav {
+  flex-direction: row-reverse;
+}
+
+.page-shell--fa .hero-copy-panel,
+.page-shell--fa .hero-side-panel,
+.page-shell--fa .audit-pill,
+.page-shell--fa .countdown-cell,
+.page-shell--fa .metric-main,
+.page-shell--fa .metric-row,
+.page-shell--fa .ledger-row,
+.page-shell--fa .source-row,
+.page-shell--fa .section-copy,
+.page-shell--fa .trust-card,
+.page-shell--fa .proof-card,
+.page-shell--fa .rate-card {
+  text-align: right;
+}
+
+.page-shell--fa .hero-title,
+.page-shell--fa .hero-side-title,
+.page-shell--fa .proof-card h3,
+.page-shell--fa .trust-card h3,
+.page-shell--fa .impact-card h3,
+.page-shell--fa .footer-cta h3 {
+  font-family: 'Vazirmatn', sans-serif;
+  letter-spacing: 0;
+}
+
+.page-shell--fa .hero-title {
+  max-width: none;
+  font-size: clamp(2.6rem, 4.8vw, 4.2rem);
+  line-height: 1.18;
+}
+
+.page-shell--fa .hero-side-title {
+  font-weight: 800;
+}
+
+.page-shell--fa .hero-subtitle,
+.page-shell--fa .hero-side-body,
+.page-shell--fa .hero-side-point,
+.page-shell--fa .source-main span,
+.page-shell--fa .missing-card,
+.page-shell--fa .footer-cta p,
+.page-shell--fa .trust-card p,
+.page-shell--fa .metric-note {
+  font-family: 'Vazirmatn', sans-serif;
+}
+
+.page-shell--fa .top-strip__inner,
+.page-shell--fa .mono-overline,
+.page-shell--fa .section-kicker,
+.page-shell--fa .section-heading,
+.page-shell--fa .feedback-line,
+.page-shell--fa .rate-card p,
+.page-shell--fa .rate-card span,
+.page-shell--fa .audit-pill label,
+.page-shell--fa .source-id,
+.page-shell--fa .source-meta,
+.page-shell--fa .hero-disclaimer span,
+.page-shell--fa .ledger-row,
+.page-shell--fa .source-footnote,
+.page-shell--fa .proof-meta,
+.page-shell--fa .metric-meta,
+.page-shell--fa .metric-row--head,
+.page-shell--fa .countdown-cell label,
+.page-shell--fa .hero-source-box label {
+  font-family: 'Vazirmatn', sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.page-shell--fa .metric-source,
+.page-shell--fa .source-main,
+.page-shell--fa .source-meta {
+  text-align: right;
+}
+
+.page-shell--fa .metric-source {
+  justify-items: end;
+}
+
+.page-shell--fa .hero-links,
+.page-shell--fa .action-row,
+.page-shell--fa .hero-disclaimer {
+  justify-content: flex-start;
+}
+
 @media (max-width: 960px) {
   .hero-topline,
   .source-row,
-  .ledger-row {
+  .ledger-row,
+  .metric-row {
     grid-template-columns: 1fr;
     flex-direction: column;
     align-items: flex-start;
@@ -647,7 +934,8 @@ a {
   .proof-grid,
   .trust-grid,
   .impact-grid,
-  .missing-grid {
+  .missing-grid,
+  .hero-layout {
     grid-template-columns: 1fr;
   }
 }
@@ -660,6 +948,7 @@ a {
 
   .hero-nav,
   .hero-links,
+  .lang-switch,
   .action-row,
   .hero-disclaimer {
     display: grid;
@@ -668,10 +957,15 @@ a {
 
   .hero-nav a,
   .hero-links a,
+  .lang-switch__button,
   .action-row button,
-  .lang-pill,
   .footer-cta a {
     width: 100%;
     text-align: center;
+  }
+
+  .hero-copy-panel,
+  .hero-side-panel {
+    padding: 1rem;
   }
 }

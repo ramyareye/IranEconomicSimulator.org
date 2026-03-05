@@ -1,0 +1,707 @@
+{
+  "meta": {
+    "releaseVersion": "v0.3.1",
+    "generatedAt": "2026-03-06",
+    "snapshotStatus": "Official Level 1 + partial Level 2 snapshot wired in",
+    "databaseStrategy": "git-json",
+    "notes": [
+      "All published app numbers for this pass are stored in git-backed JSON.",
+      "The 13T opportunity-cost figure remains an estimated repo artifact, not an official audited series.",
+      "Official values are separated from provisional repo estimates in the results bundle."
+    ]
+  },
+  "sources": [
+    {
+      "id": "WB_OPEN_DATA",
+      "title": "World Bank Open Data API",
+      "publisher": "World Bank",
+      "url": "https://data.worldbank.org/country/iran-islamic-rep",
+      "retrievedAt": "2026-03-06",
+      "datasetLastUpdated": "2026-02-24",
+      "tier": "A",
+      "chip": "Tier A",
+      "tone": "sky",
+      "meta": "Retrieved 2026-03-06 - dataset last updated 2026-02-24",
+      "reliability": "high",
+      "note": "Used for GDP, population, investment, trade, FDI, tax, revenue, oil-rents, and business-density series.",
+      "series": [
+        "NY.GDP.MKTP.CD",
+        "SP.POP.TOTL",
+        "NE.GDI.TOTL.ZS",
+        "NE.EXP.GNFS.CD",
+        "NE.IMP.GNFS.CD",
+        "BX.KLT.DINV.CD.WD",
+        "NY.GDP.PETR.RT.ZS",
+        "GC.TAX.TOTL.GD.ZS",
+        "GC.REV.XGRT.GD.ZS",
+        "IC.BUS.NDNS.ZS"
+      ]
+    },
+    {
+      "id": "WB_WGI",
+      "title": "World Bank Worldwide Governance Indicators",
+      "publisher": "World Bank",
+      "url": "https://info.worldbank.org/governance/wgi/",
+      "retrievedAt": "2026-03-06",
+      "datasetLastUpdated": "2026-02-24",
+      "tier": "A",
+      "chip": "Tier A",
+      "tone": "amber",
+      "meta": "Retrieved 2026-03-06 - API series last updated 2026-02-24",
+      "reliability": "high",
+      "note": "Used for corruption, government effectiveness, regulatory quality, political stability, rule of law, and voice/accountability percentiles.",
+      "series": [
+        "CC.PER.RNK",
+        "GE.PER.RNK",
+        "RQ.PER.RNK",
+        "PV.PER.RNK",
+        "RL.PER.RNK",
+        "VA.PER.RNK"
+      ]
+    },
+    {
+      "id": "US_EIA_IRAN",
+      "title": "U.S. Energy Information Administration - Iran Country Analysis Brief",
+      "publisher": "U.S. EIA",
+      "url": "https://www.eia.gov/international/analysis/country/IRN",
+      "retrievedAt": "2026-03-06",
+      "tier": "A",
+      "chip": "Tier A",
+      "tone": "rose",
+      "meta": "Country Analysis Brief accessed 2026-03-06",
+      "reliability": "high",
+      "note": "Used for crude oil production, crude oil exports, and export-destination concentration context."
+    },
+    {
+      "id": "US_OFAC_IRAN",
+      "title": "Iran Sanctions | Office of Foreign Assets Control",
+      "publisher": "U.S. Treasury OFAC",
+      "url": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
+      "retrievedAt": "2026-03-06",
+      "tier": "A",
+      "chip": "Tier A",
+      "tone": "slate",
+      "meta": "Current page accessed 2026-03-06",
+      "reliability": "high",
+      "note": "Used for primary-source confirmation that the U.S. Iran sanctions program is active."
+    },
+    {
+      "id": "REPO_CUMULATIVE_WASTE",
+      "title": "Repo estimate artifact - cumulative-waste.json",
+      "publisher": "Local repository artifact",
+      "path": "docs/grok-iran-regime-economic-cost-tracker iran-waste-ticker-2026/data/cumulative-waste.json",
+      "retrievedAt": "2026-03-06",
+      "tier": "estimate",
+      "chip": "Estimate",
+      "tone": "rose",
+      "meta": "docs/grok-iran-regime-economic-cost-tracker iran-waste-ticker-2026/data/cumulative-waste.json",
+      "reliability": "estimate",
+      "note": "Source of the current 13T opportunity-cost estimate."
+    },
+    {
+      "id": "REPO_BLUEPRINT",
+      "title": "Repo blueprint and ledger artifacts",
+      "publisher": "Local repository artifacts",
+      "paths": [
+        "docs/gemini-Iran_Cost_Project_Blueprint/initial_data.json",
+        "docs/gemini-IOC_Full_Project_Arsenal/data/corruption_ledger.json",
+        "docs/gemini-Iran_Economic_Simulator_Final_Package/src/data.json"
+      ],
+      "retrievedAt": "2026-03-06",
+      "tier": "estimate",
+      "chip": "Estimate",
+      "tone": "rose",
+      "meta": "docs/gemini-Iran_Cost_Project_Blueprint/initial_data.json plus related repo ledger files",
+      "reliability": "estimate",
+      "note": "Source of provisional repo-only corruption and budget-drain rows still shown in the app."
+    }
+  ],
+  "processLog": [
+    {
+      "step": 1,
+      "at": "2026-03-06",
+      "action": "Audited the existing Vite app and confirmed numbers were hardcoded in src/App.jsx.",
+      "details": "Identified that the app mixed official-looking claims, provisional repo estimates, and scenario outputs in one component without a git-backed JSON data bundle."
+    },
+    {
+      "step": 2,
+      "at": "2026-03-06",
+      "action": "Matched the app against the repo's Level 1 and Level 2 data inventory.",
+      "details": "Used the project docs to define the target official series: GDP, population, investment, trade, FDI, oil-linked measures, governance proxies, business-density proxy, and sanctions status."
+    },
+    {
+      "step": 3,
+      "at": "2026-03-06",
+      "action": "Fetched official World Bank indicator values and metadata.",
+      "details": "Collected the latest non-null values from the World Bank API for NY.GDP.MKTP.CD, SP.POP.TOTL, NE.GDI.TOTL.ZS, NE.EXP.GNFS.CD, NE.IMP.GNFS.CD, BX.KLT.DINV.CD.WD, NY.GDP.PETR.RT.ZS, GC.TAX.TOTL.GD.ZS, GC.REV.XGRT.GD.ZS, IC.BUS.NDNS.ZS, and WGI percentile indicators."
+    },
+    {
+      "step": 4,
+      "at": "2026-03-06",
+      "action": "Fetched primary-source EIA and OFAC context for Level 2 and oil coverage.",
+      "details": "Recorded EIA values for crude oil production, crude oil exports, and China concentration, and confirmed the OFAC Iran sanctions page is active."
+    },
+    {
+      "step": 5,
+      "at": "2026-03-06",
+      "action": "Calculated context numbers around the repo 13T estimate.",
+      "details": "Computed 2024 GDP per capita, trade balance, cumulative official current-dollar GDP for 1979-2024, estimate-to-GDP multiple, and estimate-to-cumulative-GDP ratio."
+    },
+    {
+      "step": 6,
+      "at": "2026-03-06",
+      "action": "Preserved provisional repo artifacts but labeled them as provisional.",
+      "details": "Kept the annual drain ledger, ideological budget proxy, and corruption cases visible while separating them from official Level 1 and Level 2 results."
+    },
+    {
+      "step": 7,
+      "at": "2026-03-06",
+      "action": "Moved the app data layer into git-backed JSON and updated the UI to read from it.",
+      "details": "Created this JSON bundle as the canonical app data source for this pass and refactored the app to render results, sources, and details from JSON rather than local JS constants."
+    },
+    {
+      "step": 8,
+      "at": "2026-03-06",
+      "action": "Validated the frontend build after refactor.",
+      "details": "Ran npm run build successfully after the JSON migration and UI updates."
+    }
+  ],
+  "calculations": {
+    "gdpPerCapita2024": {
+      "formula": "GDP_2024 / Population_2024",
+      "inputs": {
+        "gdpUsd": 475252089215.416,
+        "population": 91567738
+      },
+      "value": 5190.169590248216,
+      "unit": "usd"
+    },
+    "tradeBalance2024": {
+      "formula": "Exports_2024 - Imports_2024",
+      "inputs": {
+        "exportsUsd": 111928863188.398,
+        "importsUsd": 135497500555.676
+      },
+      "value": -23568637367.278,
+      "unit": "usd"
+    },
+    "cumulativeGdpCurrentUsd1979To2024": {
+      "formula": "Sum of World Bank NY.GDP.MKTP.CD annual values, 1979-2024 inclusive",
+      "inputs": {
+        "series": "NY.GDP.MKTP.CD",
+        "startYear": 1979,
+        "endYear": 2024,
+        "yearsCount": 46
+      },
+      "value": 11853068245310.344,
+      "unit": "usd"
+    },
+    "estimateVsCurrentGdp": {
+      "formula": "EstimatedOpportunityCost / GDP_2024",
+      "inputs": {
+        "estimatedOpportunityCostUsd": 13000000000000,
+        "gdpUsd2024": 475252089215.416
+      },
+      "value": 27.35390394908402,
+      "unit": "multiple"
+    },
+    "estimateVsCumulativeGdp": {
+      "formula": "EstimatedOpportunityCost / CumulativeGDP_1979_2024",
+      "inputs": {
+        "estimatedOpportunityCostUsd": 13000000000000,
+        "cumulativeGdpUsd1979To2024": 11853068245310.344
+      },
+      "value": 1.0967624357637051,
+      "unit": "ratio"
+    },
+    "directIdeologicalBudgetUsd": {
+      "formula": "450000000000000 IRR / 650000 FX rate",
+      "inputs": {
+        "annualBudgetIrr": 450000000000000,
+        "fxRate": 650000
+      },
+      "value": 692307692.3076923,
+      "unit": "usd"
+    },
+    "weightedAnnualDrainUsd": {
+      "formula": "Sum((annualBudgetIrr * multiplier) / 650000) for repo provisional drain rows",
+      "value": 1413000000,
+      "unit": "usd"
+    },
+    "baseModelGrowthPct": {
+      "formula": "((endGdpUsd - startGdpUsd) / startGdpUsd) * 100",
+      "inputs": {
+        "startGdpUsd": 100000000000,
+        "endGdpUsd": 179084769654
+      },
+      "value": 79.084769654,
+      "unit": "pct"
+    }
+  },
+  "results": {
+    "estimatedOpportunityCost": {
+      "totalUsd": 13000000000000,
+      "rangeMinUsd": 10000000000000,
+      "rangeMaxUsd": 15000000000000,
+      "asOf": "2026-03",
+      "claimType": "estimated",
+      "confidence": "estimate",
+      "sourceId": "REPO_CUMULATIVE_WASTE",
+      "sourceLabel": "Repo artifact - cumulative-waste.json",
+      "note": "Composite repo estimate built from mixed methods and external studies, not from a single official audited dataset."
+    },
+    "costContextCards": [
+      {
+        "label": "Official cumulative GDP, 1979-2024",
+        "value": 11853068245310.344,
+        "unit": "usd",
+        "note": "World Bank sum of annual current-dollar GDP. Useful context, not a direct validation of the 13T estimate."
+      },
+      {
+        "label": "Official GDP, 2024",
+        "value": 475252089215.416,
+        "unit": "usd",
+        "note": "Latest non-null World Bank GDP series value for Iran."
+      },
+      {
+        "label": "Estimate / 2024 GDP",
+        "value": 27.35390394908402,
+        "unit": "multiple",
+        "note": "The repo estimate equals about 27.4 years of 2024 GDP at current-dollar scale."
+      },
+      {
+        "label": "Estimate / cumulative GDP",
+        "value": 109.67624357637051,
+        "unit": "pct",
+        "note": "The 13T estimate is slightly larger than the sum of official current-dollar GDP from 1979-2024."
+      }
+    ],
+    "topOfficialCards": [
+      {
+        "label": "Official GDP",
+        "value": 475252089215.416,
+        "unit": "usd",
+        "asOf": "2024"
+      },
+      {
+        "label": "Population",
+        "value": 91567738,
+        "unit": "people",
+        "asOf": "2024"
+      },
+      {
+        "label": "GDP per capita",
+        "value": 5190.169590248216,
+        "unit": "usd",
+        "asOf": "2024"
+      }
+    ],
+    "officialLevel1Metrics": [
+      {
+        "id": "gdp_current_usd",
+        "label": "GDP (current US$)",
+        "value": 475252089215.416,
+        "unit": "usd",
+        "asOf": "2024",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - NY.GDP.MKTP.CD",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/NY.GDP.MKTP.CD?format=json&per_page=80",
+        "note": "Latest non-null World Bank current-dollar GDP value for Iran."
+      },
+      {
+        "id": "population_total",
+        "label": "Population, total",
+        "value": 91567738,
+        "unit": "people",
+        "asOf": "2024",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - SP.POP.TOTL",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/SP.POP.TOTL?format=json&per_page=80",
+        "note": "Latest official population total in the World Bank series."
+      },
+      {
+        "id": "gdp_per_capita_current_usd",
+        "label": "GDP per capita (current US$)",
+        "value": 5190.169590248216,
+        "unit": "usd",
+        "asOf": "2024",
+        "claimType": "derived",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - GDP / population",
+        "sourceUrl": "https://data.worldbank.org/country/iran-islamic-rep",
+        "note": "Derived from same-year World Bank GDP and population series."
+      },
+      {
+        "id": "gross_capital_formation_pct_gdp",
+        "label": "Gross capital formation (% of GDP)",
+        "value": 44.3461376412017,
+        "unit": "pct",
+        "asOf": "2024",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - NE.GDI.TOTL.ZS",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/NE.GDI.TOTL.ZS?format=json&per_page=80",
+        "note": "Investment proxy used in the project Level 1 checklist."
+      },
+      {
+        "id": "exports_goods_services_usd",
+        "label": "Exports of goods and services (current US$)",
+        "value": 111928863188.398,
+        "unit": "usd",
+        "asOf": "2024",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - NE.EXP.GNFS.CD",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/NE.EXP.GNFS.CD?format=json&per_page=80",
+        "note": "Official external-sector baseline for the latest non-null year."
+      },
+      {
+        "id": "imports_goods_services_usd",
+        "label": "Imports of goods and services (current US$)",
+        "value": 135497500555.676,
+        "unit": "usd",
+        "asOf": "2024",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - NE.IMP.GNFS.CD",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/NE.IMP.GNFS.CD?format=json&per_page=80",
+        "note": "Official external-sector baseline for the latest non-null year."
+      },
+      {
+        "id": "trade_balance_usd",
+        "label": "Trade balance (goods and services, current US$)",
+        "value": -23568637367.278,
+        "unit": "usd",
+        "asOf": "2024",
+        "claimType": "derived",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - exports minus imports",
+        "sourceUrl": "https://data.worldbank.org/country/iran-islamic-rep",
+        "note": "Derived as exports minus imports using same-year World Bank series."
+      },
+      {
+        "id": "fdi_net_inflows_usd",
+        "label": "FDI, net inflows (BoP, current US$)",
+        "value": 1449111110,
+        "unit": "usd",
+        "asOf": "2024",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - BX.KLT.DINV.CD.WD",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/BX.KLT.DINV.CD.WD?format=json&per_page=80",
+        "note": "Official FDI inflow baseline from the World Bank series."
+      },
+      {
+        "id": "oil_rents_pct_gdp",
+        "label": "Oil rents (% of GDP)",
+        "value": 18.2658980929233,
+        "unit": "pct",
+        "asOf": "2021",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - NY.GDP.PETR.RT.ZS",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/NY.GDP.PETR.RT.ZS?format=json&per_page=80",
+        "note": "Oil-rents share is the cleanest official oil-linked macro proxy collected in this pass."
+      },
+      {
+        "id": "crude_oil_production_mbd",
+        "label": "Crude oil production",
+        "value": 2.9,
+        "unit": "mbd",
+        "asOf": "2023",
+        "claimType": "observed",
+        "confidence": "medium",
+        "sourceId": "US_EIA_IRAN",
+        "sourceLabel": "U.S. EIA Iran Country Analysis Brief",
+        "sourceUrl": "https://www.eia.gov/international/analysis/country/IRN",
+        "note": "EIA reports Iran produced 2.9 million barrels per day of crude oil in 2023."
+      },
+      {
+        "id": "crude_oil_exports_mbd",
+        "label": "Crude oil exports",
+        "value": 1.5,
+        "unit": "mbd",
+        "asOf": "2024 YTD",
+        "claimType": "observed",
+        "confidence": "medium",
+        "sourceId": "US_EIA_IRAN",
+        "sourceLabel": "U.S. EIA Iran Country Analysis Brief",
+        "sourceUrl": "https://www.eia.gov/international/analysis/country/IRN",
+        "note": "EIA reports average crude oil and condensate exports of about 1.5 million barrels per day in the first eight months of 2024."
+      },
+      {
+        "id": "tax_revenue_pct_gdp",
+        "label": "Tax revenue (% of GDP)",
+        "value": 7.35847804149632,
+        "unit": "pct",
+        "asOf": "2009",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - GC.TAX.TOTL.GD.ZS",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/GC.TAX.TOTL.GD.ZS?format=json&per_page=80",
+        "note": "Official series is materially lagged for Iran, so this stays visible but not headline-worthy."
+      },
+      {
+        "id": "revenue_excluding_grants_pct_gdp",
+        "label": "Revenue, excluding grants (% of GDP)",
+        "value": 25.3762281584679,
+        "unit": "pct",
+        "asOf": "2009",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - GC.REV.XGRT.GD.ZS",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/GC.REV.XGRT.GD.ZS?format=json&per_page=80",
+        "note": "Official series is lagged; kept visible as a data gap rather than treated as current."
+      }
+    ],
+    "level2HighlightCards": [
+      {
+        "title": "Control of corruption",
+        "value": 10.3773584365845,
+        "unit": "pct",
+        "asOf": "2023",
+        "description": "World Bank percentile rank. Higher percentile is better.",
+        "sourceLabel": "World Bank WGI"
+      },
+      {
+        "title": "Government effectiveness",
+        "value": 14.1509437561035,
+        "unit": "pct",
+        "asOf": "2023",
+        "description": "World Bank percentile rank. Higher percentile is better.",
+        "sourceLabel": "World Bank WGI"
+      },
+      {
+        "title": "Regulatory quality",
+        "value": 4.24528312683105,
+        "unit": "pct",
+        "asOf": "2023",
+        "description": "World Bank percentile rank. Higher percentile is better.",
+        "sourceLabel": "World Bank WGI"
+      }
+    ],
+    "officialLevel2Metrics": [
+      {
+        "id": "control_of_corruption_pct_rank",
+        "label": "Control of corruption percentile rank",
+        "value": 10.3773584365845,
+        "unit": "pct",
+        "asOf": "2023",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_WGI",
+        "sourceLabel": "World Bank WGI API - CC.PER.RNK",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/CC.PER.RNK?format=json&per_page=80",
+        "note": "Official governance proxy for corruption exposure in Level 2."
+      },
+      {
+        "id": "government_effectiveness_pct_rank",
+        "label": "Government effectiveness percentile rank",
+        "value": 14.1509437561035,
+        "unit": "pct",
+        "asOf": "2023",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_WGI",
+        "sourceLabel": "World Bank WGI API - GE.PER.RNK",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/GE.PER.RNK?format=json&per_page=80",
+        "note": "Official governance proxy for institutional delivery quality."
+      },
+      {
+        "id": "regulatory_quality_pct_rank",
+        "label": "Regulatory quality percentile rank",
+        "value": 4.24528312683105,
+        "unit": "pct",
+        "asOf": "2023",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_WGI",
+        "sourceLabel": "World Bank WGI API - RQ.PER.RNK",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/RQ.PER.RNK?format=json&per_page=80",
+        "note": "Official proxy for competition conditions and regulatory drag."
+      },
+      {
+        "id": "political_stability_pct_rank",
+        "label": "Political stability percentile rank",
+        "value": 8.05687236785889,
+        "unit": "pct",
+        "asOf": "2023",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_WGI",
+        "sourceLabel": "World Bank WGI API - PV.PER.RNK",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/PV.PER.RNK?format=json&per_page=80",
+        "note": "Official country-risk proxy from the World Bank governance indicators."
+      },
+      {
+        "id": "rule_of_law_pct_rank",
+        "label": "Rule of law percentile rank",
+        "value": 16.0377349853516,
+        "unit": "pct",
+        "asOf": "2023",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_WGI",
+        "sourceLabel": "World Bank WGI API - RL.PER.RNK",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/RL.PER.RNK?format=json&per_page=80",
+        "note": "Official legal-institution proxy for contract enforcement and predictability."
+      },
+      {
+        "id": "voice_accountability_pct_rank",
+        "label": "Voice and accountability percentile rank",
+        "value": 7.84313726425171,
+        "unit": "pct",
+        "asOf": "2023",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_WGI",
+        "sourceLabel": "World Bank WGI API - VA.PER.RNK",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/VA.PER.RNK?format=json&per_page=80",
+        "note": "Official governance proxy that sits outside fiscal-only metrics but matters for system quality."
+      },
+      {
+        "id": "new_business_density",
+        "label": "New business density",
+        "value": 0.601202191556406,
+        "unit": "per_1000_adults",
+        "asOf": "2020",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "WB_OPEN_DATA",
+        "sourceLabel": "World Bank Open Data API - IC.BUS.NDNS.ZS",
+        "sourceUrl": "https://api.worldbank.org/v2/country/IRN/indicator/IC.BUS.NDNS.ZS?format=json&per_page=80",
+        "note": "Official business dynamism proxy: new registrations per 1,000 people ages 15-64."
+      },
+      {
+        "id": "china_export_share",
+        "label": "Share of crude exports shipped to China",
+        "value": 90,
+        "unit": "pct_plus",
+        "asOf": "2024 YTD",
+        "claimType": "observed",
+        "confidence": "medium",
+        "sourceId": "US_EIA_IRAN",
+        "sourceLabel": "U.S. EIA Iran Country Analysis Brief",
+        "sourceUrl": "https://www.eia.gov/international/analysis/country/IRN",
+        "note": "EIA says more than 90% of Iran crude oil and condensate exports went to China in the first eight months of 2024."
+      },
+      {
+        "id": "ofac_sanctions_status",
+        "label": "U.S. Iran sanctions program status",
+        "value": "Active",
+        "unit": "status",
+        "asOf": "2026-03-06",
+        "claimType": "observed",
+        "confidence": "high",
+        "sourceId": "US_OFAC_IRAN",
+        "sourceLabel": "U.S. Treasury OFAC - Iran Sanctions",
+        "sourceUrl": "https://ofac.treasury.gov/sanctions-programs-and-country-information/iran-sanctions",
+        "note": "Primary-source status check used as a sanctions-intensity anchor in Level 2."
+      }
+    ],
+    "provisionalRepoData": {
+      "fxRate": 650000,
+      "blueprintCorruptionTotalUsd": 120000000000,
+      "directIdeologicalBudgetUsd": 692307692.3076923,
+      "weightedAnnualDrainUsd": 1413000000,
+      "annualDrainItems": [
+        {
+          "id": "religious_centers",
+          "label": "Religious seminaries service center",
+          "annualBudgetIrr": 9500000000000,
+          "multiplier": 1.5,
+          "directUsd": 14615384.615384616,
+          "weightedUsd": 21923076.923076924,
+          "sourceId": "REPO_BLUEPRINT",
+          "source": "docs/gemini-Iran_Economic_Simulator_Final_Package/src/data.json"
+        },
+        {
+          "id": "propaganda",
+          "label": "Islamic Propaganda Organization",
+          "annualBudgetIrr": 3500000000000,
+          "multiplier": 1.2,
+          "directUsd": 5384615.384615385,
+          "weightedUsd": 6461538.461538462,
+          "sourceId": "REPO_BLUEPRINT",
+          "source": "docs/gemini-Iran_Economic_Simulator_Final_Package/src/data.json"
+        },
+        {
+          "id": "oil_discount_loss",
+          "label": "Estimated oil discount loss to China",
+          "annualBudgetIrr": 450000000000000,
+          "multiplier": 2,
+          "directUsd": 692307692.3076923,
+          "weightedUsd": 1384615384.6153846,
+          "sourceId": "REPO_BLUEPRINT",
+          "source": "docs/gemini-Iran_Economic_Simulator_Final_Package/src/data.json"
+        }
+      ],
+      "corruptionCases": [
+        {
+          "name": "Debsh Tea scandal",
+          "amountUsd": 3700000000,
+          "note": "Could have built 500 state-of-the-art hospitals.",
+          "sourceId": "REPO_BLUEPRINT",
+          "source": "docs/gemini-IOC_Full_Project_Arsenal/data/corruption_ledger.json"
+        },
+        {
+          "name": "Steel corruption case",
+          "amountUsd": 3000000000,
+          "note": "Listed as a notable case in the blueprint data.",
+          "sourceId": "REPO_BLUEPRINT",
+          "source": "docs/gemini-Iran_Cost_Project_Blueprint/initial_data.json"
+        }
+      ]
+    },
+    "scenarios": [
+      {
+        "title": "Sanctions lift only",
+        "upliftPercent": 82,
+        "description": "Long-term GDP growth from removing EU/US sanctions.",
+        "source": "docs/grok-iran-regime-economic-cost-tracker iran-waste-ticker-2026/data/future-scenarios.json"
+      },
+      {
+        "title": "Catch-up to Turkey productivity",
+        "upliftPercent": 240,
+        "description": "Sanctions lift plus productivity catch-up to Turkey levels.",
+        "source": "docs/grok-iran-regime-economic-cost-tracker iran-waste-ticker-2026/data/future-scenarios.json"
+      },
+      {
+        "title": "Catch-up to South Korea productivity",
+        "upliftPercent": 389,
+        "description": "Sanctions lift plus productivity catch-up to South Korea levels.",
+        "source": "docs/grok-iran-regime-economic-cost-tracker iran-waste-ticker-2026/data/future-scenarios.json"
+      }
+    ],
+    "baseModelSample": {
+      "startYear": 2026,
+      "startGdpUsd": 100000000000,
+      "endYear": 2036,
+      "endGdpUsd": 179084769654,
+      "startPerCapitaUsd": 1200,
+      "endPerCapitaUsd": 2149,
+      "growthPct": 79.084769654,
+      "release": "chatgpt-complete/samples/release/scenarios/base.point.json",
+      "note": "Demo-only scenario artifact, useful for wiring the UI to model outputs."
+    },
+    "remainingDataGaps": [
+      "No defensible single official all-in cost total exists, so this pass does not invent a bigger headline than 13T.",
+      "World Bank tax and revenue series for Iran are materially lagged, with latest visible values in 2009.",
+      "Level 2 is now partly wired, but there is still no clean official monopoly or bonyad-share dataset in the app.",
+      "Human capital flight, repression, health, environmental damage, and war losses remain outside one published all-in figure."
+    ]
+  }
+}
