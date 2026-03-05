@@ -1,30 +1,36 @@
-# IranEconomicSimulator.org
+# Iran Economic Simulator
 
-Documentation and prototype archive for an evidence-first project with two products:
+Standalone Vite + React prototype inside `IranEconomicSimulator.org`.
 
-- **Evidence Atlas** — historical outcomes with source links and confidence labels
-- **Scenario Lab** — conditional future scenarios with assumptions, uncertainty, and sensitivity
+## What this prototype is
 
-## Start here (canonical)
+This build is intentionally split between two inputs:
+
+- content and labeling mapped from the repo docs
+- page structure and hierarchy modeled after the reference screenshots you sent
+
+The current page pulls its language and section logic from:
 
 - `codex/PROJECT_MASTER_DOCUMENT.md`
+- `chatgpt-complete/08_UI_SPEC_AND_COPY.md`
+- `chatgpt/PUBLIC_SITE_COPY.md`
 
-The `codex/` folder is the source of truth for architecture, methodology, data governance, and the execution plan.
+## What it currently shows
 
-## ChatGPT docs
+- release banner + global disclaimer
+- two-product split: `Evidence Atlas` and `Scenario Lab`
+- docs-based proof cards with claim type, confidence, source IDs, and method notes
+- large screenshot-style scenario card, explicitly marked as a placeholder demo output
+- claim taxonomy, trust anchors, methodology cards, timeline, source registry preview
+- a visible missing-features section
 
-- `chatgpt/README.md`
+## Important
 
-The `chatgpt/` folder contains opinionated public-site copy guidance, prompt templates, and checklists to use ChatGPT safely without credibility loss.
+The large running number is not presented as real validated data. It is a placeholder formula used to preserve the reference layout until signed Scenario Lab release artifacts exist.
 
-## ChatGPT complete (super detailed + samples)
+## Run locally
 
-- `chatgpt-complete/README.md`
-
-The `chatgpt-complete/` folder is a “don’t miss anything” version with deeper specs plus a minimal end-to-end sample release bundle under `chatgpt-complete/samples/release/`.
-
-## Prototypes archive
-
-- `docs/README.md`
-
-The `docs/` folder is an archive of older drafts and runnable prototypes (ChatGPT/Claude/Gemini/Grok). Treat it as reference material, not canonical policy.
+```bash
+npm install
+npm run dev
+```

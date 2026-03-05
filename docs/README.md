@@ -1,25 +1,30 @@
-# `docs/` (Archive of prototypes)
+# IranEconomicSimulator.org
 
-This folder is an **archive** of prior drafts, experiments, and runnable prototypes produced across multiple AI tools (ChatGPT / Claude / Gemini / Grok).
+Documentation and prototype archive for an evidence-first project with two products:
 
-It is **not** the canonical source of truth for the project’s architecture, methodology, or publication rules.
+- **Evidence Atlas** — historical outcomes with source links and confidence labels
+- **Scenario Lab** — conditional future scenarios with assumptions, uncertainty, and sensitivity
 
-## What’s inside (high level)
+## Start here (canonical)
 
-- `chatgpt-iran-potential-simulator/` and `chatgpt-iran-potential-simulator-v0.2/`: Scenario-simulator prototypes (model + data schemas + demo app scaffolding).
-- `chatgpt-ips-share-page/`: Minimal shareable Next.js UI for rendering scenario outputs.
-- `claude-iran-freedom-project/`: “cost of the regime” dataset-style project with validation scripts and bilingual docs.
-- `grok-iran-regime-economic-cost-tracker iran-waste-ticker-2026/`: Ticker prototype + pitch/plan drafts (note: folder name contains spaces).
-- `gemini-*/`: Strategy/pitch/architecture drafts and methodology notes.
-- Loose files (`*.txt`, `*.html`, `*.json`): scratch notes and one-off artifacts.
+- `codex/PROJECT_MASTER_DOCUMENT.md`
 
-## How to use this folder safely
+The `codex/` folder is the source of truth for architecture, methodology, data governance, and the execution plan.
 
-- Treat everything here as **reference material** unless it has been migrated into the canonical docs and validated against the project’s contracts.
-- Expect placeholders, inconsistent confidence labels, and mixed “demo” vs “production” language in some artifacts.
-- Before reusing any metric/event/number in public: enforce the canonical requirements (source IDs, claim type, confidence, method note, uncertainty when applicable).
+## ChatGPT docs
 
-## Canonical docs
+- `chatgpt/README.md`
 
-For the current canonical plan and rules, use `codex/` (starting with `codex/PROJECT_MASTER_DOCUMENT.md`).
+The `chatgpt/` folder contains opinionated public-site copy guidance, prompt templates, and checklists to use ChatGPT safely without credibility loss.
 
+## ChatGPT complete (super detailed + samples)
+
+- `chatgpt-complete/README.md`
+
+The `chatgpt-complete/` folder is a “don’t miss anything” version with deeper specs plus a minimal end-to-end sample release bundle under `chatgpt-complete/samples/release/`.
+
+## Prototypes archive
+
+- `docs/README.md`
+
+The `docs/` folder is an archive of older drafts and runnable prototypes (ChatGPT/Claude/Gemini/Grok). Treat it as reference material, not canonical policy.
