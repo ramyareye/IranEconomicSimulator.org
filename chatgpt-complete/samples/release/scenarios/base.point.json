@@ -1,0 +1,50 @@
+{
+  "scenario_id": "base",
+  "release_version": "0.0.0-demo",
+  "model_version": "0.0.0-demo",
+  "data_version": "0.0.0-demo",
+  "generated_at": "2026-03-05T00:00:00Z",
+  "seed": 12345,
+  "assumptions": {
+    "horizon_years": 10,
+    "g_base": 0.02,
+    "trade_uplift_peak": 0.02,
+    "governance_uplift_peak": 0.01,
+    "competition_uplift_peak": 0.01,
+    "capital_uplift_peak": 0.015,
+    "talent_uplift_peak": 0.005,
+    "shock_probability": 0.1,
+    "shock_impact_min": -0.02,
+    "shock_impact_max": 0.01
+  },
+  "series": {
+    "gdp_usd_current": [
+      { "year": 2026, "value": 100000000000 },
+      { "year": 2027, "value": 106000000000 },
+      { "year": 2028, "value": 112360000000 },
+      { "year": 2029, "value": 119101600000 },
+      { "year": 2030, "value": 126247696000 },
+      { "year": 2031, "value": 133822557760 },
+      { "year": 2032, "value": 141851911226 },
+      { "year": 2033, "value": 150363025899 },
+      { "year": 2034, "value": 159384807453 },
+      { "year": 2035, "value": 168947895900 },
+      { "year": 2036, "value": 179084769654 }
+    ],
+    "gdp_per_capita_usd_current": [
+      { "year": 2026, "value": 1200 },
+      { "year": 2027, "value": 1272 },
+      { "year": 2028, "value": 1348 },
+      { "year": 2029, "value": 1429 },
+      { "year": 2030, "value": 1515 },
+      { "year": 2031, "value": 1606 },
+      { "year": 2032, "value": 1702 },
+      { "year": 2033, "value": 1804 },
+      { "year": 2034, "value": 1912 },
+      { "year": 2035, "value": 2027 },
+      { "year": 2036, "value": 2149 }
+    ]
+  },
+  "notes": "DEMO ONLY: Scenario output (conditional), not a forecast. Replace values with generated outputs from your validated model."
+}
+

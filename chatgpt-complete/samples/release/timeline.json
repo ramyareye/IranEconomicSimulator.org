@@ -1,0 +1,48 @@
+{
+  "items": [
+    {
+      "id": "event.2020_01_01.demo_policy_change",
+      "date": "2020-01-01",
+      "title": {
+        "fa": "رویداد نمونه: تغییر سیاست",
+        "en": "Demo event: Policy change"
+      },
+      "description": {
+        "fa": "این یک رویداد نمونه برای نمایش ساختار تایم‌لاین است. متن و عددها باید با منابع دقیق جایگزین شوند.",
+        "en": "This is a demo event to demonstrate the timeline structure. Replace text and any estimates with audited sources."
+      },
+      "impact_type": "economic",
+      "impact_estimate": null,
+      "sources": ["SRC.DEMO.DATASET.001"]
+    },
+    {
+      "id": "event.2022_06_01.demo_shock",
+      "date": "2022-06-01",
+      "title": {
+        "fa": "رویداد نمونه: شوک اقتصادی",
+        "en": "Demo event: Economic shock"
+      },
+      "description": {
+        "fa": "این رویداد شامل یک برآورد اثر (نمونه) با بازه عدم‌قطعیت است.",
+        "en": "This event includes a demo impact estimate with an uncertainty range."
+      },
+      "impact_type": "economic",
+      "impact_estimate": {
+        "claim_type": "estimated",
+        "unit": "usd_current",
+        "value": 5000000000,
+        "confidence": "estimate",
+        "uncertainty": {
+          "type": "range",
+          "min": 2000000000,
+          "max": 8000000000,
+          "basis": "mixed",
+          "notes": "DEMO ONLY: replace with a defensible estimate and method."
+        },
+        "method_note": "DEMO ONLY: illustrative estimate structure."
+      },
+      "sources": ["SRC.DEMO.METHOD.001"]
+    }
+  ]
+}
+

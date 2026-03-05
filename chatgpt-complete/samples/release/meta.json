@@ -1,0 +1,12 @@
+{
+  "release_version": "0.0.0-demo",
+  "data_version": "0.0.0-demo",
+  "model_version": "0.0.0-demo",
+  "generated_at": "2026-03-05T00:00:00Z",
+  "notes": "DEMO ONLY: This bundle is a structural example for contracts and UI/API integration.",
+  "warnings": [
+    "Do not publish these sample values as factual claims.",
+    "Replace SRC.DEMO.* entries with real, audited source registry items before any public release."
+  ]
+}
+

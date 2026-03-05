@@ -1,0 +1,58 @@
+{
+  "scenario_id": "base",
+  "release_version": "0.0.0-demo",
+  "model_version": "0.0.0-demo",
+  "data_version": "0.0.0-demo",
+  "generated_at": "2026-03-05T00:00:00Z",
+  "method": "oat_tornado",
+  "target": {
+    "metric": "gdp_usd_current",
+    "year": 2036,
+    "unit": "usd_current"
+  },
+  "baseline_value": 179084769654,
+  "drivers": [
+    {
+      "key": "trade_uplift_peak",
+      "label": { "fa": "اوج اثر تجارت", "en": "Trade uplift (peak)" },
+      "low_delta": -18000000000,
+      "high_delta": 26000000000,
+      "unit": "usd_current",
+      "notes": "DEMO ONLY: impact on year-2036 GDP when toggling this parameter to min/max."
+    },
+    {
+      "key": "capital_uplift_peak",
+      "label": { "fa": "اوج اثر سرمایه", "en": "Capital response (peak)" },
+      "low_delta": -12000000000,
+      "high_delta": 19000000000,
+      "unit": "usd_current",
+      "notes": "DEMO ONLY."
+    },
+    {
+      "key": "governance_uplift_peak",
+      "label": { "fa": "اوج اثر حکمرانی", "en": "Governance uplift (peak)" },
+      "low_delta": -8000000000,
+      "high_delta": 12000000000,
+      "unit": "usd_current",
+      "notes": "DEMO ONLY."
+    },
+    {
+      "key": "competition_uplift_peak",
+      "label": { "fa": "اوج اثر رقابت", "en": "Competition uplift (peak)" },
+      "low_delta": -6000000000,
+      "high_delta": 9000000000,
+      "unit": "usd_current",
+      "notes": "DEMO ONLY."
+    },
+    {
+      "key": "g_base",
+      "label": { "fa": "رشد پایه", "en": "Baseline growth" },
+      "low_delta": -15000000000,
+      "high_delta": 16000000000,
+      "unit": "usd_current",
+      "notes": "DEMO ONLY."
+    }
+  ],
+  "notes": "DEMO ONLY: Sensitivity/tornado output structure."
+}
+

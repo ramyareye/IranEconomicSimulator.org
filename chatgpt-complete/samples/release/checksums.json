@@ -1,0 +1,13 @@
+{
+  "algorithm": "sha256",
+  "items": {
+    "meta.json": "a517d67e65f24916ed7c8bf156d7317ccb0564b8d1df47d4db67bf8f006f1f6c",
+    "metrics.json": "c2614d99692af5d847897656bef8977182ca236531a61ae78b656f8e9e89dac0",
+    "timeline.json": "643369d81ce36c5f04d26ae1c36ff97dc08136542e18b0205161b4cd7e96fd9f",
+    "sources.json": "581ff4747082cf9f76a9dc96e8b9b3496afa4a237930f1c7db49931cabab1c85",
+    "scenarios/base.point.json": "d1de537a4add8941cb6185b532e599a97e7d625013854bd83e03c477b4766db4",
+    "scenarios/base.montecarlo.json": "d20fa6717f0cf641e73bb334ea35c7f16165194fc74f1f76a099fa3e1c56647d",
+    "scenarios/base.sensitivity.json": "4649f85693cd1eab1e227eebda3211a3fdf6fedaa20ca099736c569019056499"
+  }
+}
+

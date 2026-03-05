@@ -1,0 +1,71 @@
+{
+  "items": [
+    {
+      "id": "macro.gdp_usd_current.demo",
+      "title": {
+        "fa": "تولید ناخالص داخلی (دلار جاری) — نمونه",
+        "en": "GDP (current USD) — demo"
+      },
+      "category": "macroeconomics",
+      "subcategory": "gdp",
+      "value": 100000000000,
+      "unit": "usd_current",
+      "as_of": "2024-12-31",
+      "claim_type": "observed",
+      "confidence": "medium",
+      "sources": ["SRC.DEMO.DATASET.001"],
+      "method_note": "DEMO ONLY: placeholder value to demonstrate the contract; replace with validated series and definition (nominal/real/PPP).",
+      "uncertainty": null,
+      "version": "0.0.0-demo"
+    },
+    {
+      "id": "macro.gdp_per_capita_usd_current.demo",
+      "title": {
+        "fa": "GDP سرانه (دلار جاری) — نمونه",
+        "en": "GDP per capita (current USD) — demo"
+      },
+      "category": "macroeconomics",
+      "subcategory": "gdp_per_capita",
+      "value": 1200,
+      "unit": "usd_current",
+      "as_of": "2024-12-31",
+      "claim_type": "derived",
+      "confidence": "estimate",
+      "sources": ["SRC.DEMO.DATASET.001"],
+      "method_note": "DEMO ONLY: GDP per capita = GDP / population (inputs must be defined consistently).",
+      "uncertainty": {
+        "type": "range",
+        "min": 1100,
+        "max": 1300,
+        "basis": "mixed",
+        "notes": "DEMO ONLY: example range to show UI behavior; replace with justified uncertainty."
+      },
+      "version": "0.0.0-demo"
+    },
+    {
+      "id": "governance.leakage_rate.demo",
+      "title": {
+        "fa": "نرخ اتلاف/نشت منابع (نمونه)",
+        "en": "Leakage/waste rate (demo)"
+      },
+      "category": "governance",
+      "subcategory": "leakage",
+      "value": 0.25,
+      "unit": "ratio",
+      "as_of": "2026-03-05",
+      "claim_type": "estimated",
+      "confidence": "estimate",
+      "sources": ["SRC.DEMO.METHOD.001"],
+      "method_note": "DEMO ONLY: illustrative parameter-like metric; replace with a defensible estimate and sources.",
+      "uncertainty": {
+        "type": "range",
+        "min": 0.15,
+        "max": 0.35,
+        "basis": "model",
+        "notes": "DEMO ONLY: range represents uncertainty in this estimate."
+      },
+      "version": "0.0.0-demo"
+    }
+  ]
+}
+

@@ -1,0 +1,31 @@
+{
+  "items": [
+    {
+      "id": "SRC.DEMO.DATASET.001",
+      "title": "Demo dataset placeholder (replace with real dataset metadata)",
+      "url": "https://example.com/demo-dataset",
+      "publisher": "Example Publisher",
+      "published_at": null,
+      "retrieved_at": "2026-03-05",
+      "tier": "A",
+      "reliability": "high",
+      "bias_note": null,
+      "license_or_reuse_note": null,
+      "notes": "DEMO ONLY: replace with a specific series/table identifier (e.g., dataset name + series code)."
+    },
+    {
+      "id": "SRC.DEMO.METHOD.001",
+      "title": "Demo methodology note placeholder (replace with real paper/report)",
+      "url": "https://example.com/demo-method",
+      "publisher": "Example Publisher",
+      "published_at": null,
+      "retrieved_at": "2026-03-05",
+      "tier": "B",
+      "reliability": "medium",
+      "bias_note": "DEMO ONLY.",
+      "license_or_reuse_note": null,
+      "notes": "DEMO ONLY: use for estimates that require a methodological basis."
+    }
+  ]
+}
+
