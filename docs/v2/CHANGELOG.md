@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.4-cloudflare-workers-assets-config (2026-03-06)
+
+Added:
+- `wrangler.jsonc` at the repo root for Cloudflare Workers Assets deployment from `./dist`.
+
+Updated:
+- `package.json` with `cf:whoami` and `deploy` scripts for repo-root Cloudflare deployment.
+- `.gitignore` to ignore `dist/` and `.wrangler/` artifacts.
+
+Process:
+- Audited the repo root after Wrangler reported a missing entry-point or assets directory.
+- Confirmed the current app is a Vite static build at the repo root and that `dist/` is the correct deploy target.
+- Added Workers Assets config with `html_handling: "auto-trailing-slash"` and `not_found_handling: "single-page-application"` so SPA routes fall back to `index.html`.
+- Added a root deployment script so the normal flow is `bun run deploy` instead of manually building and then calling Wrangler without config.
+
+Verified:
+- `npm run build`
+
 ## 1.0.3-full-page-language-modes (2026-03-06)
 
 Updated:
